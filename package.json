@@ -1,0 +1,40 @@
+{
+  "name": "butler-miles_website",
+  "version": "1.0.0",
+  "description": "Website for Butler-Miles: a buying-and-selling business dealing in Antiques, Art, Collectibles, Jewellery, Militaria and Vintage items.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "antiques",
+    "art",
+    "collectibles",
+    "jewellery",
+    "militaria",
+    "vintage",
+    "medals",
+    "badges",
+    "uniforms",
+    "bayonets",
+    "swords",
+    "ephemera",
+    "ceramics",
+    "silver",
+    "toys",
+    "originals",
+    "prints",
+    "buying-and-selling",
+    "business",
+    "retail",
+    "website",
+    "buyer",
+    "seller",
+    "butler-miles"
+  ],
+  "author": "Robert McIsaac https://github.com/RobertMcIsaac",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
