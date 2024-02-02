@@ -13357,5 +13357,16 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.navbar__btn.navbar__btn--left {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 50rem;
+  border-bottom-left-radius: 50rem;
+}
+.navbar__btn.navbar__btn--dropdown {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 50rem;
+  border-bottom-right-radius: 50rem;
 }/*# sourceMappingURL=main.css.map */
-

@@ -1,13 +1,4 @@
-/* .btn-group .btn-secondary:first-child {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.btn-group .dropdown-toggle-split {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-} */
-
+/* 
 
 .navbar .btn-group .btn-secondary:first-child {
     border-top-right-radius: 0 !important;
@@ -17,4 +8,4 @@
 .navbar .btn-group .dropdown-toggle-split {
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
-}
+} */
