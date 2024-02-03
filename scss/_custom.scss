@@ -1,17 +1,20 @@
 .navbar__btn {
-    &.navbar__btn--left {
+  &.navbar__btn--left {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
       // Bootstrap rounded-pill styling for left side only
       border-top-left-radius: 50rem;
       border-bottom-left-radius: 50rem;
-    }
-    &.navbar__btn--dropdown {
+  }
+  &.navbar__btn--dropdown {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       // Bootstrap rounded-pill styling for right side only
       border-top-right-radius: 50rem;
       border-bottom-right-radius: 50rem;
-    }
   }
+}
   
+// .custom-font {
+//       font-family: "Poiret One", sans-serif;
+//   }
