@@ -13,14 +13,20 @@
     <header>
 
       <nav class="navbar navbar-expand-md bg-secondary">
-        <div class="container-fluid py-2">
+        <div class="container-fluid my-2">
           <a class="navbar-brand text-primary" href="index.html">Butler-Miles</a>
           <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon rounded"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <div class="btn-group mx-2">
+              <li class="nav-item mx-2 btn border-primary text-primary rounded-pill">
+                <a class="active text-decoration-none" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-2 btn border-primary text-primary rounded-pill">
+                <a class="text-decoration-none" href="#">Contact</a>
+              </li>
+              <li class="nav-item btn-group mx-2">
                 <!-- split buttons have custom border-radius styles to form 2 buttons into one 'rounded-pill' shape with .navbar__btn & .navbar__btn--left/--dropdown -->
                 <a role="button" href="militaria.html" class="btn border-primary text-primary navbar__btn navbar__btn--left">Militaria</a>
                 <button type="button" class="btn border-primary text-primary dropdown-toggle dropdown-toggle-split navbar__btn navbar__btn--dropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -30,8 +36,8 @@
                     <li><span class="dropdown-item-text">Sub 1</span></li>
                     <li><span class="dropdown-item-text">Sub 1</span></li>
                 </ul>
-              </div>
-              <div class="btn-group mx-2">
+              </li>
+              <li class="nav-item btn-group mx-2">
                 <!-- split buttons have custom border-radius styles to form 2 buttons into one 'rounded-pill' shape with .navbar__btn & .navbar__btn--left/--dropdown -->
                 <a role="button" href="antiques_art.html" class="btn border-primary text-primary navbar__btn navbar__btn--left">Antiques & Art</a>
                 <button type="button" class="btn border-primary text-primary dropdown-toggle dropdown-toggle-split navbar__btn navbar__btn--dropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -41,8 +47,8 @@
                     <li><span class="dropdown-item-text">Sub 1</span></li>
                     <li><span class="dropdown-item-text">Sub 1</span></li>
                 </ul>
-              </div>
-              <div class="btn-group mx-2">
+              </li>
+              <li class="nav-item btn-group mx-2">
                 <!-- split buttons have custom border-radius styles to form 2 buttons into one 'rounded-pill' shape with .navbar__btn & .navbar__btn--left/--dropdown -->
                 <a role="button" href="jewellery.html" class="btn border-primary text-primary navbar__btn navbar__btn--left">Jewellery</a>
                 <button type="button" class="btn border-primary text-primary dropdown-toggle dropdown-toggle-split navbar__btn navbar__btn--dropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,8 +58,8 @@
                     <li><span class="dropdown-item-text">Sub 1</span></li>
                     <li><span class="dropdown-item-text">Sub 1</span></li>
                 </ul>
-              </div>
-              <div class="btn-group mx-2">
+              </li>
+              <li class="nav-item btn-group mx-2">
                 <!-- split buttons have custom border-radius styles to form 2 buttons into one 'rounded-pill' shape with .navbar__btn & .navbar__btn--left/--dropdown -->
                 <a role="button" href="vintage_collectibles.html" class="btn border-primary text-primary navbar__btn navbar__btn--left">Vintage & Collectibles</a>
                 <button type="button" class="btn border-primary text-primary dropdown-toggle dropdown-toggle-split navbar__btn navbar__btn--dropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,109 +69,14 @@
                     <li><span class="dropdown-item-text">Sub 1</span></li>
                     <li><span class="dropdown-item-text">Sub 1</span></li>
                 </ul>
-              </div>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <div class="container-md my-2">
 
-          <div class="row align-items-center">
-
-            <!-- left-hand col: cards -->
-            <div class="col">
-
-              <!-- top row of cards -->
-              <div class="row my-2 align-items-center">
-                <div class="col">
-                  <!-- card -->
-                  <div class="card">
-                    <div class="card-body bg-secondary text-primary">
-                      <h1 class="card-title h4">Militaria</h1>
-                      <p class="card-text lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Medals</li>
-                      <li class="list-group-item">Badges</li>
-                      <li class="list-group-item">Bayonets/ Swords</li>
-                      <li class="list-group-item">Ephemera</li>
-                    </ul>
-                    <img src="" alt="" class="card-image-bottom">
-                  </div>
-                </div>
-                <div class="col">
-                  <!-- card -->
-                  <div class="card">
-                    <div class="card-body bg-secondary text-primary">
-                      <h1 class="card-title h4">Antiques & Art</h1>
-                      <p class="card-text lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Medals</li>
-                      <li class="list-group-item">Badges</li>
-                      <li class="list-group-item">Bayonets/ Swords</li>
-                      <li class="list-group-item">Ephemera</li>
-                    </ul>
-                    <img src="" alt="" class="card-image-bottom">
-                  </div>
-                </div>
-              </div>
-              <!-- bottom row of cards -->
-              <div class="row my-2 align-items-center">
-                <div class="col">
-                  <!-- card -->
-                  <div class="card">
-                    <div class="card-body bg-secondary text-primary">
-                      <h1 class="card-title h4">Jewellery</h1>
-                      <p class="card-text lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Medals</li>
-                      <li class="list-group-item">Badges</li>
-                      <li class="list-group-item">Bayonets/ Swords</li>
-                      <li class="list-group-item">Ephemera</li>
-                    </ul>
-                    <img src="" alt="" class="card-image-bottom">
-                  </div>
-                </div>
-                <div class="col">
-                  <!-- card -->
-                  <div class="card">
-                    <div class="card-body bg-secondary text-primary">
-                      <h1 class="card-title  h4">Vintage & Collectibles</h1>
-                      <p class="card-text lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Medals</li>
-                      <li class="list-group-item">Badges</li>
-                      <li class="list-group-item">Bayonets/ Swords</li>
-                      <li class="list-group-item">Ephemera</li>
-                    </ul>
-                    <img src="" alt="" class="card-image-bottom">
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- right-hand col: title and description -->
-            <div class="col-md-6 text-center text-md-end text-secondary">
-              <h1>
-                  <div class="display-2">Butler-Miles</div>
-                  <div class="display-5">Lorem ipsum dolor sit.</div>
-              </h1>
-              <p class="lead my-4 txt-muted text-md-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis architecto corrupti corporis, cupiditate voluptates nulla perspiciatis pariatur quos velit esse!</p>
-            </div>
-
-          </div>
-        </div>
-
-      </section>
-    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
