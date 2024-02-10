@@ -3,10 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Butler-Miles</title>
+    <title>BUTLER-MILES</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poiret+One&family=Sofia+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poiret+One&family=Sofia+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -17,21 +22,21 @@
 
       <nav class="navbar navbar-expand-lg bg-secondary">
         <div class="container-fluid my-2">
-          <a class="navbar-brand text-primary custom-font" href="index.html">Butler-Miles</a>
+          <a class="navbar-brand text-primary brand-font" href="index.html">BUTLER-MILES</a>
           <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon rounded"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item mx-2 btn border-primary text-primary rounded-pill">
-                <a class="active text-decoration-none fw-bold" href="index.html">Home</a>
+                <a class="active text-decoration-none" href="index.html">Home</a>
               </li>
               <li class="nav-item mx-2 btn border-primary text-primary rounded-pill">
                 <a class="text-decoration-none" href="#">Contact</a>
               </li>
               <li class="nav-item btn-group mx-2">
                 <!-- split buttons have custom border-radius styles to form 2 buttons into one 'rounded-pill' shape with .navbar__btn & .navbar__btn--left/--dropdown -->
-                <a role="button" href="militaria.html" class="btn border-primary text-primary navbar__btn navbar__btn--left fw-bold" aria-current="page">Militaria</a>
+                <a role="button" href="militaria.html" class="btn border-primary text-primary navbar__btn navbar__btn--left" aria-current="page">Militaria</a>
                 <button type="button" class="btn border-primary text-primary dropdown-toggle dropdown-toggle-split navbar__btn navbar__btn--dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
@@ -82,15 +87,137 @@
     </header>
 
     <main>
-        <section>
 
-        </section>
+      <section>
+        <div class="container-md my-3">
+
+            <div class="row justify-content-center my-3">
+                <div class="col-md-8">
+                    <h1 class="display-3 brand-font text-secondary">MILITARIA</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint harum magnam atque suscipit incidunt unde amet totam, tenetur, veniam dicta nihil id quae, voluptates natus. Labore culpa, optio fugiat doloremque quisquam velit veritatis, omnis dolorum iusto distinctio ipsa eius debitis!</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-2 text-center py-1">
+                    <button class="btn bg-secondary text-primary rounded-pill border-primary">MEDALS</button>
+                </div>
+                <div class="col-md-2 text-center py-1">
+                    <button class="btn bg-secondary text-primary rounded-pill border-primary">BADGES</button>
+                </div>
+                <div class="col-md-2 text-center py-1">
+                    <button class="btn bg-secondary text-primary rounded-pill border-primary">UNIFORMS</button>
+                </div>
+                <div class="col-md-2 text-center py-1">
+                    <button class="btn bg-secondary text-primary rounded-pill border-primary">EPHEMERA</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- carousel -->
+        <div class="container-md my-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div id="militariaCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#militariaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#militariaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#militariaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#militariaCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://fakeimg.pl/250x100/" class="img-fluid w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>First slide label</h5>
+                              <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://fakeimg.pl/250x100/" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Second slide label</h5>
+                              <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://fakeimg.pl/250x100/" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Third slide label</h5>
+                              <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://fakeimg.pl/250x100/" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Fourth slide label</h5>
+                              <p>Some representative placeholder content for the fourth slide.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </section>
+
+      <section class="bg-secondary">
+        <div class="container-md">
+            <div class="row pt-4">
+                <div class="col-md-8 py-2">
+                    <h1 class="display-6 brand-font text-primary">MEDALS</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card border-primary">
+                        <div class="row">
+                          <div class="col-6 col-lg-4">
+                            <img src="https://fakeimg.pl/300/" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-6 col-lg-8">
+                            <div class="card-body">
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, aperiam! Officiis fugiat molestiae cumque perferendis maiores? Rem autem saepe placeat accusantium dolore at hic cumque earum voluptatum, quibusdam iusto dolorum?</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+
+
+      <section>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-6">
+
+                </div>
+                <div class="col-6"></div>
+            </div>
+        </div>
+      </section>
 
     </main>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 
 </html>
