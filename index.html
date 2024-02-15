@@ -19,66 +19,45 @@
   <body>
 
     <header>
-
       <nav class="navbar navbar-expand-lg bg-secondary">
         <div class="container-fluid my-2">
-          <a class="navbar-brand text-primary brand-font" href="index.html">BUTLER-MILES</a>
+          <!-- navbar collapsed -->
+          <a class="navbar-brand text-primary brand-font d-lg-none" href="index.html">BUTLER-MILES</a>
           <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon rounded"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item mx-2 btn border-primary text-primary rounded-pill">
-                <a class="active text-decoration-none" aria-current="page" href="index.html">Home</a>
+          <!-- navbar expanded -->
+          <div class="row collapse navbar-collapse mx-auto" id="navbarNav">
+            <!-- nav brand -->
+            <div class="col-3">
+              <a class="navbar-brand text-primary brand-font d-none d-lg-block" href="index.html">BUTLER-MILES</a>
+            </div>
+            <!-- nav category btns -->
+            <ul class="navbar-nav col-6 d-flex justify-content-lg-evenly gap-2 px-1">
+              <!-- custom @media css for .navbar-nav.nav-item ensures nav category btns all equal sizes on >=lg screens-->
+              <li class="nav-item">
+                <a role="button" href="" class="btn border-primary text-primary rounded-pill w-100">Antiques</a>
               </li>
-              <li class="nav-item mx-2 btn border-primary text-primary rounded-pill">
-                <a class="text-decoration-none" href="#">Contact</a>
+              <li class="nav-item">
+                <a role="button" href="" class="btn border-primary text-primary rounded-pill w-100">Art</a>
               </li>
-              <li class="nav-item btn-group mx-2">
-                <!-- split buttons have custom border-radius styles to form 2 buttons into one 'rounded-pill' shape with .navbar__btn & .navbar__btn--left/--dropdown -->
-                <a role="button" href="militaria.html" class="btn border-primary text-primary navbar__btn navbar__btn--left">Militaria</a>
-                <button type="button" class="btn border-primary text-primary dropdown-toggle dropdown-toggle-split navbar__btn navbar__btn--dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><span class="dropdown-item-text">Medals</span></li>
-                    <li><span class="dropdown-item-text">Badges</span></li>
-                    <li><span class="dropdown-item-text">Uniforms</span></li>
-                    <li><span class="dropdown-item-text">Ephemera</span></li>
-                </ul>
+              <li class="nav-item">
+                <a role="button" href="militaria.html" class="btn border-primary text-primary rounded-pill w-100">Militaria</a>
               </li>
-              <li class="nav-item btn-group mx-2">
-                <!-- split buttons have custom border-radius styles to form 2 buttons into one 'rounded-pill' shape with .navbar__btn & .navbar__btn--left/--dropdown -->
-                <a role="button" href="jewellery.html" class="btn border-primary text-primary navbar__btn navbar__btn--left">Jewellery</a>
-                <button type="button" class="btn border-primary text-primary dropdown-toggle dropdown-toggle-split navbar__btn navbar__btn--dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><span class="dropdown-item-text">Coins</span></li>
-                </ul>
+              <li class="nav-item">
+                <a role="button" href="" class="btn border-primary text-primary rounded-pill w-100">Vintage</a>
               </li>
-              <li class="nav-item btn-group mx-2">
-                <!-- split buttons have custom border-radius styles to form 2 buttons into one 'rounded-pill' shape with .navbar__btn & .navbar__btn--left/--dropdown -->
-                <a role="button" href="antiques_art.html" class="btn border-primary text-primary navbar__btn navbar__btn--left">Antiques & Art</a>
-                <button type="button" class="btn border-primary text-primary dropdown-toggle dropdown-toggle-split navbar__btn navbar__btn--dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><span class="dropdown-item-text">Ceramics</span></li>
-                    <li><span class="dropdown-item-text">Silver</span></li>
-                    <li><span class="dropdown-item-text">Originals</span></li>
-                    <li><span class="dropdown-item-text">Prints</span></li>
-                </ul>
+            </ul>
+            <!-- nav links -->
+            <ul class="navbar-nav col-3 justify-content-lg-end">
+              <li class="nav-item">
+                <a class="active nav-link text-primary" aria-current="page" href="index.html">Home</a>
               </li>
-              <li class="nav-item btn-group mx-2">
-                <!-- split buttons have custom border-radius styles to form 2 buttons into one 'rounded-pill' shape with .navbar__btn & .navbar__btn--left/--dropdown -->
-                <a role="button" href="vintage_collectibles.html" class="btn border-primary text-primary navbar__btn navbar__btn--left">Vintage & Collectibles</a>
-                <button type="button" class="btn border-primary text-primary dropdown-toggle dropdown-toggle-split navbar__btn navbar__btn--dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="visually-hidden">Toggle Dropdown</span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><span class="dropdown-item-text">Toys</span></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Contact</a>
               </li>
             </ul>
           </div>

@@ -1,0 +1,7 @@
+
+/* Navbar buttons equal width for screens >= lg */
+@media (min-width: 992px) { /* Bootstrap lg breakpoint */
+  .navbar-nav .nav-item {
+    width: 25%; /* Equal width - 4 nav buttons */
+  }
+}
