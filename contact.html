@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BUTLER-MILES</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poiret+One&family=Sofia+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid my-2">
+          <!-- navbar collapsed -->
+          <a class="navbar-brand text-primary brand-font d-lg-none" href="index.html">BUTLER-MILES</a>
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon rounded"></span>
+          </button>
+          <!-- navbar expanded -->
+          <div class="row collapse navbar-collapse mx-auto" id="navbarNav">
+            <!-- nav brand -->
+            <div class="col-3">
+              <a class="navbar-brand text-primary brand-font d-none d-lg-block" href="index.html">BUTLER-MILES</a>
+            </div>
+            <!-- nav category btns -->
+            <ul class="navbar-nav col-6 d-flex justify-content-lg-evenly gap-2 px-1 brand-font">
+              <!-- custom @media css for .navbar-nav.nav-item ensures nav category btns all equal sizes on >=lg screens-->
+              <li class="nav-item">
+                <a role="button" href="" class="btn border-primary text-primary rounded-pill w-100">Antiques</a>
+              </li>
+              <li class="nav-item">
+                <a role="button" href="" class="btn border-primary text-primary rounded-pill w-100">Art</a>
+              </li>
+              <li class="nav-item">
+                <a role="button" href="militaria.html" class="btn border-primary text-primary rounded-pill w-100">Militaria</a>
+              </li>
+              <li class="nav-item">
+                <a role="button" href="" class="btn border-primary text-primary rounded-pill w-100">Vintage</a>
+              </li>
+            </ul>
+            <!-- nav links -->
+            <ul class="navbar-nav col-3 justify-content-lg-end">
+              <li class="nav-item">
+                <a class="active nav-link text-primary" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container-fluid justify-content-center my-3">
+                <div class="row justify-content-center ">
+                    <div class="col-10">
+                        <h1 class="display-4 text-secondary brand-font border-bottom border-2 border-primary pb-3">CONTACT</h1>
+                        <p class="text-secondary ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni nesciunt aperiam, ullam suscipit optio?</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-10 text-center pb-3">
+                        <ul class="p-0 py-2 mb-1">
+                            <li class="list-group-item text-secondary">Phone: +447700777000</li>
+                            <li class="list-group-item text-secondary">Email: email@butler-miles.com</li>
+                        </ul>
+                        <button class="btn btn-primary text-secondary border-secondary border-2 rounded-pill my-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasContact" aria-controls="offcanvasContact">Contact Us</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="col-8 text-center my-1">
+                        <h5 class="display-6 text-secondary brand-font">The Shop</h5>
+                    </div>
+                    <div class="col-8 col-md-4 d-flex justify-content-start align-items-center m-2">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-secondary">* Address *</li>
+                            <li class="list-group-item text-secondary">Shop opening hours:</li>
+                            <li class="list-group-item text-secondary">I will be in the shop on Xs, Ys and Zs between Aam and Bpm</li>
+                        </ul>
+                    </div>
+                    <div class="col-8 col-md-4 d-flex justify-content-center p-0 m-2">
+                        <img class="" src="https://fakeimg.pl/300/" alt="The location of Butler-Miles">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
