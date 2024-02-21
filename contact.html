@@ -19,51 +19,57 @@
   <body>
 
     <header>
-      <nav class="navbar navbar-expand-lg bg-secondary">
-        <div class="container-fluid my-2">
-          <!-- navbar collapsed -->
-          <a class="navbar-brand text-primary brand-font d-lg-none" href="index.html">BUTLER-MILES</a>
-          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon rounded"></span>
-          </button>
-          <!-- navbar expanded -->
-          <div class="row collapse navbar-collapse mx-auto" id="navbarNav">
-            <!-- nav brand -->
-            <div class="col-3">
-              <a class="navbar-brand text-primary brand-font d-none d-lg-block" href="index.html">BUTLER-MILES</a>
+        <!-- nav bar -->
+        <nav class="navbar navbar-expand-lg bg-secondary">
+          <div class="container-fluid my-2">
+            <!-- navbar collapsed -->
+            <!-- nav brand (on collapse) -->
+            <a class="navbar-brand text-primary brand-font d-lg-none me-auto" href="index.html">BUTLER-MILES</a>
+             <!-- nav toggler -->
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon rounded"></span>
+            </button>
+            <!-- navbar expanded -->
+            <div class="row collapse navbar-collapse mx-auto" id="navbarNav">
+              <!-- nav brand (on expand)-->
+              <div class="col-3">
+                <a class="navbar-brand text-primary brand-font d-none d-lg-block" href="index.html">BUTLER-MILES</a>
+              </div>
+              <!-- nav category btns -->
+              <ul class="navbar-nav col-6 d-flex justify-content-lg-evenly gap-2 px-1 brand-font">
+                <!-- Antiques -->
+                <li class="nav-item">
+                  <a role="button" href="antiques.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ANTIQUES</a>
+                </li>
+                <!-- Art -->
+                <li class="nav-item">
+                  <a role="button" href="art.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ART</a>
+                </li>
+                 <!-- Militaria -->
+                <li class="nav-item">
+                  <a role="button" href="militaria.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">MILITARIA</a>
+                </li>
+                <!-- Vintage -->
+                <li class="nav-item">
+                  <a role="button" href="vintage.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">VINTAGE</a>
+                </li>
+              </ul>
+              <!-- nav links -->
+              <ul class="navbar-nav col-3 justify-content-lg-end">
+                <li class="nav-item">
+                  <a class="active nav-link text-primary" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-primary" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-primary" aria-current="page" href="contact.html">Contact</a>
+                </li>
+              </ul>
             </div>
-            <!-- nav category btns -->
-            <ul class="navbar-nav col-6 d-flex justify-content-lg-evenly gap-2 px-1 brand-font">
-              <!-- custom @media css for .navbar-nav.nav-item ensures nav category btns all equal sizes on >=lg screens-->
-              <li class="nav-item">
-                <a role="button" href="" class="btn border-primary text-primary rounded-pill w-100">Antiques</a>
-              </li>
-              <li class="nav-item">
-                <a role="button" href="" class="btn border-primary text-primary rounded-pill w-100">Art</a>
-              </li>
-              <li class="nav-item">
-                <a role="button" href="militaria.html" class="btn border-primary text-primary rounded-pill w-100">Militaria</a>
-              </li>
-              <li class="nav-item">
-                <a role="button" href="" class="btn border-primary text-primary rounded-pill w-100">Vintage</a>
-              </li>
-            </ul>
-            <!-- nav links -->
-            <ul class="navbar-nav col-3 justify-content-lg-end">
-              <li class="nav-item">
-                <a class="active nav-link text-primary" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" aria-current="page" href="#">Contact</a>
-              </li>
-            </ul>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
 
     <main>
         <section>

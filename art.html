@@ -19,33 +19,39 @@
   <body>
 
     <header>
+      <!-- nav bar -->
       <nav class="navbar navbar-expand-lg bg-secondary">
         <div class="container-fluid my-2">
           <!-- navbar collapsed -->
+          <!-- nav brand (on collapse) -->
           <a class="navbar-brand text-primary brand-font d-lg-none me-auto" href="index.html">BUTLER-MILES</a>
+           <!-- nav toggler -->
           <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon rounded"></span>
           </button>
           <!-- navbar expanded -->
           <div class="row collapse navbar-collapse mx-auto" id="navbarNav">
-            <!-- nav brand -->
+            <!-- nav brand (on expand)-->
             <div class="col-3">
               <a class="navbar-brand text-primary brand-font d-none d-lg-block" href="index.html">BUTLER-MILES</a>
             </div>
             <!-- nav category btns -->
             <ul class="navbar-nav col-6 d-flex justify-content-lg-evenly gap-2 px-1 brand-font">
-              <!-- custom @media css for .navbar-nav.nav-item ensures nav category btns all equal sizes on >=lg screens-->
+              <!-- Antiques -->
               <li class="nav-item">
-                <a role="button" href="" class="btn btn-secondary border-primary text-primary rounded-pill w-100" aria-current="page">Antiques</a>
+                <a role="button" href="antiques.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ANTIQUES</a>
               </li>
+              <!-- Art -->
               <li class="nav-item">
-                <a role="button" href="" class="btn btn-secondary border-primary text-primary rounded-pill w-100">Art</a>
+                <a role="button" href="art.html" aria-current="page" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ART</a>
               </li>
+               <!-- Militaria -->
               <li class="nav-item">
-                <a role="button" href="militaria.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">Militaria</a>
+                <a role="button" href="militaria.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">MILITARIA</a>
               </li>
+              <!-- Vintage -->
               <li class="nav-item">
-                <a role="button" href="" class="btn btn-secondary border-primary text-primary rounded-pill w-100">Vintage</a>
+                <a role="button" href="vintage.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">VINTAGE</a>
               </li>
             </ul>
             <!-- nav links -->
@@ -118,21 +124,21 @@
         <section>
             <div class="container-fluid my-3">
                 <!-- title/ description -->
-                <div class="row justify-content-center my-3">
-                    <div class="col-md-10">
-                        <h1 class="display-4 brand-font text-secondary border-bottom border-2 border-primary pb-3">ART</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint harum magnam atque suscipit incidunt unde amet totam, tenetur, veniam dicta nihil id quae, voluptates natus. Labore culpa, optio fugiat doloremque quisquam velit veritatis, omnis dolorum iusto distinctio ipsa eius debitis!</p>
-                    </div>
+                <div class="row justify-content-center">
+                  <div class="col-md-10 text-secondary mx-4">
+                      <h1 class="display-4 brand-font border-bottom border-2 border-primary pb-3">ART</h1>
+                      <p class="brand-font fst-italic pb-1">Originals and Prints</p>
+                      <p class="mx-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint harum magnam atque suscipit incidunt unde amet totam, tenetur, veniam dicta nihil id quae, voluptates natus. Labore culpa, optio fugiat doloremque quisquam velit veritatis, omnis dolorum iusto distinctio ipsa eius debitis!</p>
+                  </div>
                 </div>
                 <!-- 'Go to' dopdown links -->
                 <div class="row justify-content-center">
                     <div class="col-md-10">
-                        <div class="dropdown">
+                        <div class="dropdown mx-4">
                             <button class="btn border-primary text-primary bg-secondary dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">Go to</button>
                             <ul class="dropdown-menu border-primary">
-                            <li class="dropdown-item text-secondary"><a href="#originals" class="nav-link">Originals</a></li>
-                            <li class="dropdown-item text-secondary"><a href="#prints" class="nav-link">Prints</a></li>
-  
+                              <li class="dropdown-item text-secondary"><a href="#originals" class="nav-link">Originals</a></li>
+                              <li class="dropdown-item text-secondary"><a href="#prints" class="nav-link">Prints</a></li>  
                             </ul>
                         </div>
                     </div>

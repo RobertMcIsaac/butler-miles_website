@@ -19,51 +19,57 @@
   <body>
 
     <header>
-      <nav class="navbar navbar-expand-lg bg-secondary">
-        <div class="container-fluid my-2">
-          <!-- navbar collapsed -->
-          <a class="navbar-brand text-primary brand-font d-lg-none me-auto" href="index.html">BUTLER-MILES</a>
-          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon rounded"></span>
-          </button>
-          <!-- navbar expanded -->
-          <div class="row collapse navbar-collapse mx-auto" id="navbarNav">
-            <!-- nav brand -->
-            <div class="col-3">
-              <a class="navbar-brand text-primary brand-font d-none d-lg-block" href="index.html">BUTLER-MILES</a>
+        <!-- nav bar -->
+        <nav class="navbar navbar-expand-lg bg-secondary">
+          <div class="container-fluid my-2">
+            <!-- navbar collapsed -->
+            <!-- nav brand (on collapse) -->
+            <a class="navbar-brand text-primary brand-font d-lg-none me-auto" href="index.html">BUTLER-MILES</a>
+             <!-- nav toggler -->
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon rounded"></span>
+            </button>
+            <!-- navbar expanded -->
+            <div class="row collapse navbar-collapse mx-auto" id="navbarNav">
+              <!-- nav brand (on expand)-->
+              <div class="col-3">
+                <a class="navbar-brand text-primary brand-font d-none d-lg-block" href="index.html">BUTLER-MILES</a>
+              </div>
+              <!-- nav category btns -->
+              <ul class="navbar-nav col-6 d-flex justify-content-lg-evenly gap-2 px-1 brand-font">
+                <!-- Antiques -->
+                <li class="nav-item">
+                  <a role="button" href="antiques.html" aria-current="page" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ANTIQUES</a>
+                </li>
+                <!-- Art -->
+                <li class="nav-item">
+                  <a role="button" href="art.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ART</a>
+                </li>
+                 <!-- Militaria -->
+                <li class="nav-item">
+                  <a role="button" href="militaria.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">MILITARIA</a>
+                </li>
+                <!-- Vintage -->
+                <li class="nav-item">
+                  <a role="button" href="vintage.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">VINTAGE</a>
+                </li>
+              </ul>
+              <!-- nav links -->
+              <ul class="navbar-nav col-3 justify-content-lg-end">
+                <li class="nav-item">
+                  <a class="active nav-link text-primary" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-primary" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-primary" href="contact.html">Contact</a>
+                </li>
+              </ul>
             </div>
-            <!-- nav category btns -->
-            <ul class="navbar-nav col-6 d-flex justify-content-lg-evenly gap-2 px-1 brand-font">
-              <!-- custom @media css for .navbar-nav.nav-item ensures nav category btns all equal sizes on >=lg screens-->
-              <li class="nav-item">
-                <a role="button" href="" class="btn btn-secondary border-primary text-primary rounded-pill w-100" aria-current="page">Antiques</a>
-              </li>
-              <li class="nav-item">
-                <a role="button" href="" class="btn btn-secondary border-primary text-primary rounded-pill w-100">Art</a>
-              </li>
-              <li class="nav-item">
-                <a role="button" href="militaria.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">Militaria</a>
-              </li>
-              <li class="nav-item">
-                <a role="button" href="" class="btn btn-secondary border-primary text-primary rounded-pill w-100">Vintage</a>
-              </li>
-            </ul>
-            <!-- nav links -->
-            <ul class="navbar-nav col-3 justify-content-lg-end">
-              <li class="nav-item">
-                <a class="active nav-link text-primary" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" href="contact.html">Contact</a>
-              </li>
-            </ul>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
 
     <main>
 
@@ -116,12 +122,12 @@
       </section>
 
         <section>
-            <div class="container-fluid my-3">
-                <!-- title/ description -->
+            <div class="container-fluid">
                 <div class="row justify-content-center my-3">
-                    <div class="col-md-10">
-                        <h1 class="display-4 brand-font text-secondary border-bottom border-2 border-primary pb-3">ANTIQUES</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint harum magnam atque suscipit incidunt unde amet totam, tenetur, veniam dicta nihil id quae, voluptates natus. Labore culpa, optio fugiat doloremque quisquam velit veritatis, omnis dolorum iusto distinctio ipsa eius debitis!</p>
+                    <div class="col-md-10 text-secondary mx-4">
+                        <h1 class="display-4 brand-font border-bottom border-2 border-primary pb-3">ANTIQUES</h1>
+                        <p class="brand-font fst-italic pb-1">Ceramics, Coins, Jewellery and Silver</p>
+                        <p class="mx-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint harum magnam atque suscipit incidunt unde amet totam, tenetur, veniam dicta nihil id quae, voluptates natus. Labore culpa, optio fugiat doloremque quisquam velit veritatis, omnis dolorum iusto distinctio ipsa eius debitis!</p>
                     </div>
                 </div>
             </div>
@@ -131,7 +137,7 @@
         <section>
             <div class="container-md my-5">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-lg-6 mb-3">
+                    <div class="col-12 col-lg-8 mb-3">
                         <div id="militariaCarousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                               <button type="button" data-bs-target="#militariaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -190,7 +196,7 @@
                     <div class="card landing-card text-secondary mt-2">
                       <div class="card-body border-none">
                         <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
-                          <h3>Antiques</h3>
+                          <h3>Ceramics</h3>
                         </div>
                         <div class="card-text">
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eaque saepe facere! Ipsum, excepturi voluptatibus!</p>
@@ -203,7 +209,7 @@
                     <div class="card landing-card text-secondary mt-2">
                       <div class="card-body border-none">
                         <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
-                          <h3 >Art</h3>
+                          <h3 >Coins</h3>
                         </div>
                         <div class="card-text">
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eaque saepe facere! Ipsum, excepturi voluptatibus!</p>
@@ -216,7 +222,7 @@
                     <div class="card landing-card text-secondary mt-2">
                       <div class="card-body border-none">
                         <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
-                          <h3 >Militaria</h3>
+                          <h3 >Jewellery</h3>
                         </div>
                         <div class="card-text">
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eaque saepe facere! Ipsum, excepturi voluptatibus!</p>
@@ -229,7 +235,7 @@
                     <div class="card landing-card text-secondary mt-2">
                       <div class="card-body border-none">
                         <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
-                          <h3 >Vintage</h3>
+                          <h3 >Silver</h3>
                         </div>
                         <div class="card-text">
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eaque saepe facere! Ipsum, excepturi voluptatibus!</p>
