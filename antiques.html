@@ -20,7 +20,7 @@
 
     <header>
         <!-- nav bar -->
-        <nav class="navbar navbar-expand-lg bg-secondary">
+        <nav class="navbar fixed-top navbar-expand-lg bg-secondary border-bottom border-primary">
           <div class="container-fluid my-2">
             <!-- navbar collapsed -->
             <!-- nav brand (on collapse) -->
@@ -39,7 +39,7 @@
               <ul class="navbar-nav col-6 d-flex justify-content-lg-evenly gap-2 px-1 brand-font">
                 <!-- Antiques -->
                 <li class="nav-item">
-                  <a role="button" href="antiques.html" aria-current="page" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ANTIQUES</a>
+                  <a role="button" href="antiques.html" aria-current="page" class="active btn btn-secondary border-primary text-primary rounded-pill w-100">ANTIQUES</a>
                 </li>
                 <!-- Art -->
                 <li class="nav-item">
@@ -57,7 +57,7 @@
               <!-- nav links -->
               <ul class="navbar-nav col-3 justify-content-lg-end">
                 <li class="nav-item">
-                  <a class="active nav-link text-primary" href="index.html">Home</a>
+                  <a class="nav-link text-primary" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-primary" href="#">About</a>
@@ -71,7 +71,8 @@
         </nav>
       </header>
 
-    <main>
+    <!-- offset calculated dymanically in script.js -->
+    <main class="nav-height-offset">
 
       <!-- offcanvas btn -->
       <section id="offcanvas-trigger-button">
@@ -122,11 +123,11 @@
       </section>
 
         <section>
-            <div class="container-fluid">
-                <div class="row justify-content-center my-3">
+            <div class="container-fluid py-3">
+                <div class="row justify-content-center">
                     <div class="col-md-10 text-secondary mx-4">
                         <h1 class="display-4 brand-font border-bottom border-2 border-primary pb-3">ANTIQUES</h1>
-                        <p class="brand-font fst-italic pb-1">Ceramics, Coins, Jewellery and Silver</p>
+                        <p class="brand-font fst-italic pb-1">Ceramics, Coins, Jewellery, Silver</p>
                         <p class="mx-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint harum magnam atque suscipit incidunt unde amet totam, tenetur, veniam dicta nihil id quae, voluptates natus. Labore culpa, optio fugiat doloremque quisquam velit veritatis, omnis dolorum iusto distinctio ipsa eius debitis!</p>
                     </div>
                 </div>
@@ -194,7 +195,7 @@
                 <div class="row justify-content-center">
                     <!-- Ceramics card -->
                   <div class="col-12 col-md-6 mb-5">
-                    <div class="card landing-card text-secondary mt-2">
+                    <div class="card border-none text-secondary mt-2">
                       <div class="card-body border-none p-2">
                         <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
                           <h3>Ceramics</h3>
@@ -255,7 +256,7 @@
                   </div>
                    <!-- Coins card -->
                   <div class="col-12 col-md-6 mb-5">
-                    <div class="card landing-card text-secondary mt-2">
+                    <div class="card border-none text-secondary mt-2">
                       <div class="card-body border-none p-2">
                         <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
                           <h3 >Coins</h3>
@@ -316,7 +317,7 @@
                   </div>
                   <!-- Jewellery card -->
                   <div class="col-12 col-md-6 mb-5">
-                    <div class="card landing-card text-secondary mt-2">
+                    <div class="card border-none text-secondary mt-2">
                       <div class="card-body border-none p-2">
                         <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
                           <h3 >Jewellery</h3>
@@ -377,7 +378,7 @@
                   </div>
                   <!-- Silver card -->
                   <div class="col-12 col-md-6 mb-5">
-                    <div class="card landing-card text-secondary mt-2">
+                    <div class="card border-none text-secondary mt-2">
                       <div class="card-body border-none p-2">
                         <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
                           <h3 >Silver</h3>

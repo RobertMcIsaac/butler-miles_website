@@ -1,3 +1,4 @@
+/* NAV */
 
 /* Navbar buttons equal width for screens >= lg */
 @media (min-width: 992px) { /* Bootstrap lg breakpoint */
@@ -7,12 +8,19 @@
   }
 }
 
+/* current page nav-link/btn underlined */
+.btn.active,
+.nav-link.active {
+    text-decoration: underline;
+}
 
-/* Landing page */
 
-.card.landing-card {
+/* LANDING PAGE */
+
+.card.border-none {
     border: none;
 }
+
 
 .contact-btn {
     position: fixed;

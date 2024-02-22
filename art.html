@@ -20,7 +20,7 @@
 
     <header>
       <!-- nav bar -->
-      <nav class="navbar navbar-expand-lg bg-secondary">
+      <nav class="navbar fixed-top navbar-expand-lg bg-secondary border-bottom border-primary">
         <div class="container-fluid my-2">
           <!-- navbar collapsed -->
           <!-- nav brand (on collapse) -->
@@ -43,7 +43,7 @@
               </li>
               <!-- Art -->
               <li class="nav-item">
-                <a role="button" href="art.html" aria-current="page" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ART</a>
+                <a role="button" href="art.html" aria-current="page" class="active btn btn-secondary border-primary text-primary rounded-pill w-100">ART</a>
               </li>
                <!-- Militaria -->
               <li class="nav-item">
@@ -57,7 +57,7 @@
             <!-- nav links -->
             <ul class="navbar-nav col-3 justify-content-lg-end">
               <li class="nav-item">
-                <a class="active nav-link text-primary" href="index.html">Home</a>
+                <a class="nav-link text-primary" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-primary" href="#">About</a>
@@ -71,11 +71,12 @@
       </nav>
     </header>
 
-    <main>
+    <!-- offset calculated dymanically in script.js -->
+    <main class="nav-height-offset">
 
       <!-- offcanvas btn -->
       <section id="offcanvas-trigger-button">
-        <button class="btn btn-primary text-secondary border-secondary  contact-btn shiny-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="contact-sidebar">Contact us</button>
+        <button class="btn btn-primary text-secondary border-secondary contact-btn shiny-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="contact-sidebar">Contact us</button>
       </section>
 
       <!-- offcanvas component -->
@@ -122,12 +123,12 @@
       </section>
 
         <section>
-            <div class="container-fluid my-3">
+            <div class="container-fluid py-3">
                 <!-- title/ description -->
                 <div class="row justify-content-center">
                   <div class="col-md-10 text-secondary mx-4">
                       <h1 class="display-4 brand-font border-bottom border-2 border-primary pb-3">ART</h1>
-                      <p class="brand-font fst-italic pb-1">Originals and Prints</p>
+                      <p class="brand-font fst-italic pb-1">Originals, Prints</p>
                       <p class="mx-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint harum magnam atque suscipit incidunt unde amet totam, tenetur, veniam dicta nihil id quae, voluptates natus. Labore culpa, optio fugiat doloremque quisquam velit veritatis, omnis dolorum iusto distinctio ipsa eius debitis!</p>
                   </div>
                 </div>
