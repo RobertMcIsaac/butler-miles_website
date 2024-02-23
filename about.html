@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BUTLER-MILES</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poiret+One&family=Sofia+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+
+    <header>
+      <!-- nav bar -->
+      <nav class="navbar fixed-top navbar-expand-lg bg-secondary border-bottom border-primary">
+        <div class="container-fluid my-2">
+          <!-- navbar collapsed -->
+          <!-- nav brand (on collapse) -->
+          <a class="navbar-brand text-primary brand-font d-lg-none me-auto" href="index.html">BUTLER-MILES</a>
+           <!-- nav toggler -->
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon rounded"></span>
+          </button>
+          <!-- navbar expanded -->
+          <div class="row collapse navbar-collapse mx-auto" id="navbarNav">
+            <!-- nav brand (on expand)-->
+            <div class="col-3">
+              <a class="navbar-brand text-primary brand-font d-none d-lg-block" href="index.html">BUTLER-MILES</a>
+            </div>
+            <!-- nav category btns -->
+            <ul class="navbar-nav col-6 d-flex justify-content-lg-evenly gap-2 px-1 brand-font">
+              <!-- Antiques -->
+              <li class="nav-item">
+                <a role="button" href="antiques.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ANTIQUES</a>
+              </li>
+              <!-- Art -->
+              <li class="nav-item">
+                <a role="button" href="art.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ART</a>
+              </li>
+               <!-- Militaria -->
+              <li class="nav-item">
+                <a role="button" href="militaria.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">MILITARIA</a>
+              </li>
+              <!-- Vintage -->
+              <li class="nav-item">
+                <a role="button" href="vintage.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">VINTAGE</a>
+              </li>
+            </ul>
+            <!-- nav links -->
+            <ul class="navbar-nav col-3 justify-content-lg-end">
+              <li class="nav-item">
+                <a class="nav-link text-primary" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-primary" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- offset calculated dymanically in script.js -->
+    <main class="nav-height-offset">
+        <section>
+            <div class="container-fluid justify-content-center py-3">
+                <div class="row justify-content-center ">
+                    <div class="col-10">
+                        <h1 class="display-4 text-secondary brand-font border-bottom border-2 border-primary pb-3">ABOUT US</h1>
+                        <p class="text-secondary ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni nesciunt aperiam, ullam suscipit optio?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>

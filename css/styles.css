@@ -15,6 +15,19 @@
 }
 
 
+/* BUTTONS */
+
+
+.btn-shadow {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-shadow:active {
+    box-shadow: 0 5px #e1e0e0;
+    transform: translateY(4px);
+}
+
+
 /* LANDING PAGE */
 
 .card.border-none {
