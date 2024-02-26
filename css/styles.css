@@ -28,6 +28,13 @@
 }
 
 
+  
+  .btn-press:active {
+    transform: translateY(3px); /* Moves the button down when pressed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduces shadow to simulate being pressed */
+  }
+
+
 /* LANDING PAGE */
 
 .card.border-none {
