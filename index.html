@@ -90,12 +90,17 @@
               <!-- name field -->
               <div class="mb-3">
                 <label for="name-input" class="form-label">Name:</label>
-                <input type="text" class="form-control" id="name-input" placeholder="e.g. John Smith">
+                <input type="text" class="form-control" id="name-input">
+              </div>
+              <!-- phone field -->
+              <div class="mb-3">
+                <label for="phone-input" class="form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone-input">
               </div>
               <!-- email field -->
               <div class="mb-3">
                 <label for="email-input" class="form-label">Email address:</label>
-                <input type="email" class="form-control" id="email-input" placeholder="e.g. john_smith@example.com">
+                <input type="email" class="form-control" id="email-input">
               </div>
               <!-- subject field -->
               <div class="mb-3">
@@ -109,11 +114,11 @@
               <!-- query text field -->
               <div class="mb-3">
                 <label for="query" class="form-label">Your query:</label>
-                <textarea name="" id="query" class="form-control" cols="30" rows="10" placeholder="Please briefly explain the nature of your enquiry and I will respond ASAP..."></textarea>
+                <textarea name="" id="query" class="form-control" cols="20" rows="5" maxlength="1500" placeholder="Please briefly explain the nature of your enquiry and I will respond ASAP..."></textarea>
               </div>
               <!-- submit btn -->
               <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-lg btn-secondary text-primary border-primary rounded-pill">Submit</button>
+                <button type="submit" class="btn btn-secondary border-twotone btn-press text-primary rounded-pill py-2">Submit</button>
               </div>
             </form>
           </div>

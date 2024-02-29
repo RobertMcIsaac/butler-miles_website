@@ -1,6 +1,6 @@
 /* NAV */
 
-/* Navbar buttons equal width for screens >= lg */
+/* Navbar category buttons equal width for screens >= lg */
 @media (min-width: 992px) { /* Bootstrap lg breakpoint */
   .navbar-nav .nav-item,
   .nav .nav-item {
@@ -17,31 +17,16 @@
 
 /* BUTTONS */
 
-
-.btn-shadow {
+/* .btn-shadow {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .btn-shadow:active {
     box-shadow: 0 5px #e1e0e0;
     transform: translateY(4px);
-}
+} */
 
-
-  
-  .btn-press:active {
-    transform: translateY(3px); /* Moves the button down when pressed */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduces shadow to simulate being pressed */
-  }
-
-
-/* LANDING PAGE */
-
-.card.border-none {
-    border: none;
-}
-
-
+/* sidebar/offcanvas trigger button */
 .contact-btn {
     position: fixed;
     top: 50%;
@@ -77,3 +62,24 @@
     100% {left: 100%}
 } */
 
+
+/* shiny effect border - gold */
+.btn-secondary.border-twotone {
+    /* top, right, bottom, left */
+    border-color: #ddbb62 #967a30 #967a30 #ddbb62;
+}
+
+
+
+  
+.btn-press:active {
+    transform: translateY(3px); /* Moves the button down when pressed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduces shadow to simulate being pressed */
+}
+
+
+/* LANDING PAGE */
+
+.card.border-none {
+    border: none;
+}
