@@ -72,54 +72,6 @@
     <!-- offset calculated dymanically in script.js -->
     <main class="nav-height-offset">
 
-      <!-- offcanvas btn -->
-      <section id="offcanvas-trigger-button">
-        <button class="btn btn-primary text-secondary border-secondary contact-btn shiny-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="contact-sidebar">Contact us</button>
-      </section>
-
-      <!-- offcanvas component -->
-      <section id="offcanvas-contact-form">
-        <div class="offcanvas offcanvas-end bg-secondary text-primary" tabindex="-1" id="sidebar" aria-labelledby="offcanvasContactForm">
-          <div class="offcanvas-header">
-            <h4 class="offcanvas-title" id="contact-sidebar">Contact Us</h4>
-            <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <!-- contact form -->
-            <form action="">
-              <!-- name field -->
-              <div class="mb-3">
-                <label for="name-input" class="form-label">Name:</label>
-                <input type="text" class="form-control" id="name-input" placeholder="e.g. John Smith">
-              </div>
-              <!-- email field -->
-              <div class="mb-3">
-                <label for="email-input" class="form-label">Email address:</label>
-                <input type="email" class="form-control" id="email-input" placeholder="e.g. john_smith@example.com">
-              </div>
-              <!-- subject field -->
-              <div class="mb-3">
-                <label for="subject-input" class="form-label">Reason for your enquiry:</label>
-                <select class="form-select" name="" id="subject">
-                  <option value="enquiry" selected>General enquiry</option>
-                  <option value="selling">Interested in selling</option>
-                  <option value="specific-item">Looking for a specific item</option>
-                </select>
-              </div>
-              <!-- query text field -->
-              <div class="mb-3">
-                <label for="query" class="form-label">Your query:</label>
-                <textarea name="" id="query" class="form-control" cols="30" rows="10" placeholder="Please briefly explain the nature of your enquiry and I will respond ASAP..."></textarea>
-              </div>
-              <!-- submit btn -->
-              <div class="d-flex justify-content-center">
-                <button type="submit" class="btn btn-lg btn-secondary text-primary border-primary rounded-pill">Submit</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-
         <section>
             <div class="container-fluid py-3">
                 <!-- title/ description -->
@@ -288,6 +240,58 @@
 
     </main>
 
+    <!-- contact sidebar btn -->
+    <section id="offcanvas-trigger-button">
+      <button class="btn contact-btn text-secondary border-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="contact-sidebar">Contact us</button>
+    </section>
+
+    <!-- contact sidebar component -->
+    <section id="offcanvas-contact-form">
+      <div class="offcanvas offcanvas-end bg-secondary text-primary" tabindex="-1" id="sidebar" aria-labelledby="offcanvasContactForm">
+        <div class="offcanvas-header">
+          <h4 class="offcanvas-title" id="contact-sidebar">Contact Us</h4>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <!-- contact form -->
+          <form action="">
+            <!-- name field -->
+            <div class="mb-3">
+              <label for="name-input" class="form-label">Name:</label>
+              <input type="text" class="form-control" id="name-input">
+            </div>
+            <!-- phone field -->
+            <div class="mb-3">
+              <label for="phone-input" class="form-label">Phone:</label>
+              <input type="tel" class="form-control" id="phone-input">
+            </div>
+            <!-- email field -->
+            <div class="mb-3">
+              <label for="email-input" class="form-label">Email address:</label>
+              <input type="email" class="form-control" id="email-input">
+            </div>
+            <!-- subject field -->
+            <div class="mb-3">
+              <label for="subject-input" class="form-label">Reason for your enquiry:</label>
+              <select class="form-select" name="" id="subject">
+                <option value="enquiry" selected>General enquiry</option>
+                <option value="selling">Interested in selling</option>
+                <option value="specific-item">Looking for a specific item</option>
+              </select>
+            </div>
+            <!-- query text field -->
+            <div class="mb-3">
+              <label for="query" class="form-label">Your query:</label>
+              <textarea name="" id="query" class="form-control" cols="20" rows="5" maxlength="1500" placeholder="Please briefly explain the nature of your enquiry and I will respond ASAP..."></textarea>
+            </div>
+            <!-- submit btn -->
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-secondary border-primary btn-press text-primary rounded-pill py-2">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
