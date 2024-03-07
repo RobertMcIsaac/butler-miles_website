@@ -4,7 +4,8 @@
   "description": "Website for Butler-Miles: a buying-and-selling business dealing in Antiques, Art, Collectibles, Jewellery, Militaria and Vintage items.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "eleventy",
+    "serve": "eleventy --serve"
   },
   "keywords": [
     "antiques",
@@ -37,5 +38,8 @@
   "dependencies": {
     "bootstrap": "^5.3.2",
     "sass": "^1.70.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
   }
 }
