@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BUTLER-MILES</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poiret+One&family=Sofia+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+
+    <header>
+      <!-- nav bar -->
+      <nav class="navbar fixed-top navbar-expand-lg bg-secondary border-bottom border-primary">
+        <div class="container-fluid my-2">
+          <!-- nav brand (on collapse) -->
+          <a class="navbar-brand text-primary brand-font d-lg-none me-auto" href="index.html">BUTLER-MILES</a>
+           <!-- nav toggler -->
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon rounded"></span>
+          </button>
+          <div class="row collapse navbar-collapse mx-auto justify-content-center" id="navbarNav">
+            <!-- nav brand (on expand)-->
+            <div class="col-8 col-lg-3 d-none d-lg-block">
+              <a class="navbar-brand text-primary brand-font" href="index.html">BUTLER-MILES</a>
+            </div>
+            <!-- nav category btns -->
+            <ul class="col-8 col-lg-6 navbar-nav d-flex justify-content-lg-evenly gap-2 px-1 brand-font">
+              <!-- Antiques -->
+              <li class="nav-item">
+                <a role="button" href="antiques.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ANTIQUES</a>
+              </li>
+              <!-- Art -->
+              <li class="nav-item">
+                <a role="button" href="art.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ART</a>
+              </li>
+               <!-- Militaria -->
+              <li class="nav-item">
+                <a role="button" href="militaria.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">MILITARIA</a>
+              </li>
+              <!-- Vintage -->
+              <li class="nav-item">
+                <a role="button" href="vintage.html" aria-current="page" class="active btn btn-secondary border-primary text-primary rounded-pill w-100">VINTAGE</a>
+              </li>
+            </ul>
+            <!-- nav links -->
+            <ul class="col-8 col-lg-3 navbar-nav justify-content-center justify-content-lg-end brand-font">
+              <li class="nav-item text-center">
+                <a class="nav-link text-primary" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link text-primary" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+      <!-- offset calculated dymanically in script.js -->
+    <main class="nav-height-offset">
+
+      <section>
+        <div class="container-fluid py-3">
+          <!-- Vintage title/ description -->
+          <div class="row justify-content-center">
+            <div class="col-md-10 text-secondary mx-4">
+              <h1 class="display-2 brand-font border-bottom border-2 border-primary pb-3">VINTAGE</h1>
+              <p class="brand-font fst-italic pb-1">Collectibles, Toys</p>
+              <p class="mx-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint harum magnam atque suscipit incidunt unde amet totam, tenetur, veniam dicta nihil id quae, voluptates natus. Labore culpa, optio fugiat doloremque quisquam velit veritatis, omnis dolorum iusto distinctio ipsa eius debitis!</p>
+            </div>
+          </div>
+          <!-- Vintage - 'Go to' dopdown links -->
+          <div class="row justify-content-center">
+            <div class="col-10 col-sm-4 col-md-3 col-lg-2">
+              <div class="dropdown dropdown-center">
+                <button class="btn btn-secondary border-twotone border-2 text-primary dropdown-toggle rounded-pill w-100 shadow btn-press py-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">Go to</button>
+                <ul class="dropdown-menu border-primary">
+                  <li class="dropdown-item text-secondary"><a href="#collectibles" class="nav-link">Collectibles</a></li>
+                  <li class="dropdown-item text-secondary"><a href="#toys" class="nav-link">Toys</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vintage carousel -->
+      <section>
+        <div class="container-md my-3">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 mb-3">
+              <div id="vintageCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#vintageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#vintageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#vintageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#vintageCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://fakeimg.pl/250x100/" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p><sm>May not represent current stock.</sm></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://fakeimg.pl/250x100/" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p><sm>May not represent current stock.</sm></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://fakeimg.pl/250x100/" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p><sm>May not represent current stock.</sm></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://fakeimg.pl/250x100/" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Fourth slide label</h5>
+                      <p><sm>May not represent current stock.</sm></p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#vintageCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#vintageCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vintage - cards -->
+      <section>
+        <div class="container-fluid py-4">
+          <!-- Collectibles card -->
+          <div id="collectibles" class="row justify-content-center my-3">
+            <div class="col col-lg-10">
+              <div class="card text-secondary h-100 border-none">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 col-md-8">
+                      <div class="card-title border-bottom border-2 border-primary pb-3 brand-font text-lg-end">
+                        <h3 class="display-6">Collectibles</h3>
+                      </div>
+                      <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore ullam blanditiis maiores provident, dignissimos fuga corporis incidunt, quas itaque ab quisquam sit neque voluptates adipisci quos dolorum, dicta vitae! Temporibus ipsum aperiam magni, beatae unde labore excepturi deserunt non.</p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="d-flex justify-content-center justify-content-lg-end">
+                        <img class="img-fluid" src="https://fakeimg.pl/300/" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Toys card -->
+          <div id="toys" class="row justify-content-center">
+            <div class="col col-lg-10">
+              <div class="card text-secondary h-100 border-none">
+                <div class="card-body">
+                  <div class="row d-flex flex-row-reverse">
+                    <div class="col-12 col-md-8">
+                      <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
+                        <h3 class="display-6">Toys</h3>
+                      </div>
+                      <div class="card-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore ullam blanditiis maiores provident, dignissimos fuga corporis incidunt, quas itaque ab quisquam sit neque voluptates adipisci quos dolorum, dicta vitae! Temporibus ipsum aperiam magni, beatae unde labore excepturi deserunt non.</p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="d-flex justify-content-center justify-content-lg-start">
+                        <img class="img-fluid" src="https://fakeimg.pl/300/" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+      </section>
+              
+
+    </main>
+
+    <!-- contact sidebar btn -->
+    <section id="offcanvas-trigger-button">
+      <button class="btn contact-btn text-secondary border-primary btn-metallic" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="contact-sidebar">Contact us</button>
+    </section>
+
+    <!-- contact sidebar component -->
+    <section id="offcanvas-contact-form">
+      <div class="offcanvas offcanvas-end bg-secondary text-primary" tabindex="-1" id="sidebar" aria-labelledby="offcanvasContactForm">
+        <div class="offcanvas-header">
+          <h4 class="offcanvas-title" id="contact-sidebar">Contact Us</h4>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <!-- contact form -->
+          <form action="">
+            <!-- name field -->
+            <div class="mb-3">
+              <label for="name-input" class="form-label">Name:</label>
+              <input type="text" class="form-control" id="name-input">
+            </div>
+            <!-- phone field -->
+            <div class="mb-3">
+              <label for="phone-input" class="form-label">Phone:</label>
+              <input type="tel" class="form-control" id="phone-input">
+            </div>
+            <!-- email field -->
+            <div class="mb-3">
+              <label for="email-input" class="form-label">Email address:</label>
+              <input type="email" class="form-control" id="email-input">
+            </div>
+            <!-- subject field -->
+            <div class="mb-3">
+              <label for="subject-input" class="form-label">Reason for your enquiry:</label>
+              <select class="form-select" name="" id="subject">
+                <option value="enquiry" selected>General enquiry</option>
+                <option value="selling">Interested in selling</option>
+                <option value="specific-item">Looking for a specific item</option>
+              </select>
+            </div>
+            <!-- query text field -->
+            <div class="mb-3">
+              <label for="query" class="form-label">Your query:</label>
+              <textarea name="" id="query" class="form-control" cols="20" rows="5" maxlength="1500" placeholder="Please briefly explain the nature of your enquiry and I will respond ASAP..."></textarea>
+            </div>
+            <!-- submit btn -->
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-secondary border-primary btn-press text-primary rounded-pill py-2">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>

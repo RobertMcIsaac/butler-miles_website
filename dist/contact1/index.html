@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BUTLER-MILES</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poiret+One&family=Sofia+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+
+    <header>
+      <!-- nav bar -->
+      <nav class="navbar fixed-top navbar-expand-lg bg-secondary border-bottom border-primary">
+        <div class="container-fluid my-2">
+          <!-- nav brand (on collapse) -->
+          <a class="navbar-brand text-primary brand-font d-lg-none me-auto" href="index.html">BUTLER-MILES</a>
+           <!-- nav toggler -->
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon rounded"></span>
+          </button>
+          <div class="row collapse navbar-collapse mx-auto justify-content-center" id="navbarNav">
+            <!-- nav brand (on expand)-->
+            <div class="col-8 col-lg-3 d-none d-lg-block">
+              <a class="navbar-brand text-primary brand-font" href="index.html">BUTLER-MILES</a>
+            </div>
+            <!-- nav category btns -->
+            <ul class="col-8 col-lg-6 navbar-nav d-flex justify-content-lg-evenly gap-2 px-1 brand-font">
+              <!-- Antiques -->
+              <li class="nav-item">
+                <a role="button" href="antiques.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ANTIQUES</a>
+              </li>
+              <!-- Art -->
+              <li class="nav-item">
+                <a role="button" href="art.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ART</a>
+              </li>
+               <!-- Militaria -->
+              <li class="nav-item">
+                <a role="button" href="militaria.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">MILITARIA</a>
+              </li>
+              <!-- Vintage -->
+              <li class="nav-item">
+                <a role="button" href="vintage.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">VINTAGE</a>
+              </li>
+            </ul>
+            <!-- nav links -->
+            <ul class="col-8 col-lg-3 navbar-nav justify-content-center justify-content-lg-end brand-font">
+              <li class="nav-item text-center">
+                <a class="nav-link text-primary" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link active text-primary" aria-current="page" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- offset calculated dymanically in script.js -->
+    <main class="nav-height-offset">
+      <!-- Contact - title/ description -->
+        <section>
+          <div class="container-fluid justify-content-center py-3">
+              <div class="row justify-content-center ">
+                  <div class="col col-lg-10">
+                      <h1 class="display-2 text-secondary brand-font border-bottom border-2 border-primary pb-3">CONTACT</h1>
+                      <p class="text-secondary ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni nesciunt aperiam, ullam suscipit optio?</p>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <!-- Contact - details -->
+        <section>
+          <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-10 text-center pb-3">
+                  <div class="text-center">
+                    <!-- Contact - btn -->
+                    <button class="btn btn-metallic text-secondary fw-semibold border-primary rounded-pill shadow btn-press my-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="contact-sidebar">Contact us</button>
+                  </div>
+                  <ul class="p-0 py-2 mb-1">
+                      <li class="list-group-item text-secondary">Phone: +447700777000</li>
+                      <li class="list-group-item text-secondary">Email: email@butler-miles.com</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- The Shop - title/ details-->
+        <section>
+          <!-- title -->
+          <div class="container-fluid py-4">
+            <div class="row justify-content-center pb-4">
+              <div class="col col-lg-10">
+                <div class="border-bottom border-2 border-primary pb-3 brand-font text-secondary">
+                  <h3 class="display-6">The Shop</h3>
+                </div>
+              </div>
+            </div>
+            <!-- details -->
+            <div class="row justify-content-center gap-2">
+              <div class="col col-lg-8">
+                <div class="card text-secondary h-100 border-none bg-secondary">
+                  <div class="card-body">
+                    <div class="row justify-content-between">
+                      <div class="col-6 col-md-4">
+                        <div class="d-flex justify-content-center">
+                          <img class="img-fluid" src="https://fakeimg.pl/300/" alt="The location of Butler-Miles">
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-6 py-3 d-flex align-items-center justify-content-center">
+                        <div class="text-primary d-flex flex-column">
+                          <p>* Address *</p>
+                          <p>Shop opening hours:</p>
+                          <p>I will be in the shop on Xs, Ys and Zs between Aam and Bpm</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Staff -->
+        <section>
+          <!-- title -->
+          <div class="container-fluid bg-secondary py-4">
+            <div class="row justify-content-center pb-4">
+              <div class="col col-lg-10">
+                <div class="border-bottom border-2 border-primary pb-3 brand-font text-primary">
+                  <h3 class="display-6">STAFF</h3>
+                </div>
+              </div>
+            </div>
+            <!-- Staff card 1 -->
+            <div class="row justify-content-center mb-4">
+              <div class="col-10 col-sm-8 col-md-10">
+                <div class="card text-secondary h-100 border-none">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-md-8 pb-3">
+                          <div class="card-title brand-font">
+                            <h5>Nick Butler-Miles</h5>
+                          </div>
+                          <p class="card-text d-flex align-items-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore ullam blanditiis maiores provident, dignissimos fuga corporis incidunt, quas itaque ab quisquam sit neque voluptates adipisci quos dolorum, dicta vitae! Temporibus ipsum aperiam magni, beatae unde labore excepturi deserunt non.</p>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <div class="d-flex justify-content-center">
+                          <img class="img-fluid" src="https://fakeimg.pl/300/" alt="Nick Butler-Miles">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Staff card 2 -->
+            <div class="row justify-content-center mb-4">
+              <div class="col-10 col-sm-8 col-md-10">
+                <div class="card text-secondary h-100 border-none">
+                  <div class="card-body">
+                    <div class="row d-md-flex flex-row-reverse">
+                      <div class="col-12 col-md-8 pb-3">
+                        <div class="card-title brand-font">
+                          <h5>Margaret Butler-Miles</h5>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci assumenda ullam commodi doloremque soluta molestias voluptas neque pariatur consequatur illum at ipsum nisi, et ad minima accusantium modi excepturi saepe in consectetur rem dolore, nulla perferendis quos! Animi, deserunt cupiditate.</p>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <div class="d-flex justify-content-center">
+                          <img class="img-fluid" src="https://fakeimg.pl/300/" alt="Margaret Butler-Miles">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    </main>
+
+    <!-- contact sidebar component -->
+    <section id="offcanvas-contact-form">
+      <div class="offcanvas offcanvas-end bg-secondary text-primary" tabindex="-1" id="sidebar" aria-labelledby="offcanvasContactForm">
+        <div class="offcanvas-header">
+          <h4 class="offcanvas-title" id="contact-sidebar">Contact Us</h4>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <!-- contact form -->
+          <form action="">
+            <!-- name field -->
+            <div class="mb-3">
+              <label for="name-input" class="form-label">Name:</label>
+              <input type="text" class="form-control" id="name-input">
+            </div>
+            <!-- phone field -->
+            <div class="mb-3">
+              <label for="phone-input" class="form-label">Phone:</label>
+              <input type="tel" class="form-control" id="phone-input">
+            </div>
+            <!-- email field -->
+            <div class="mb-3">
+              <label for="email-input" class="form-label">Email address:</label>
+              <input type="email" class="form-control" id="email-input">
+            </div>
+            <!-- subject field -->
+            <div class="mb-3">
+              <label for="subject-input" class="form-label">Reason for your enquiry:</label>
+              <select class="form-select" name="" id="subject">
+                <option value="enquiry" selected>General enquiry</option>
+                <option value="selling">Interested in selling</option>
+                <option value="specific-item">Looking for a specific item</option>
+              </select>
+            </div>
+            <!-- query text field -->
+            <div class="mb-3">
+              <label for="query" class="form-label">Your query:</label>
+              <textarea name="" id="query" class="form-control" cols="20" rows="5" maxlength="1500" placeholder="Please briefly explain the nature of your enquiry and I will respond ASAP..."></textarea>
+            </div>
+            <!-- submit btn -->
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-secondary border-primary btn-press text-primary rounded-pill py-2">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>

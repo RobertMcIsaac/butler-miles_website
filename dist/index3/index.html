@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BUTLER-MILES</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poiret+One&family=Sofia+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+
+    <header>
+      <!-- nav bar -->
+      <nav class="navbar fixed-top navbar-expand-lg bg-secondary border-bottom border-primary">
+        <div class="container-fluid my-2">
+          <!-- nav brand (on collapse) -->
+          <a class="navbar-brand text-primary brand-font d-lg-none me-auto" href="index.html">BUTLER-MILES</a>
+           <!-- nav toggler -->
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon rounded"></span>
+          </button>
+          <div class="row collapse navbar-collapse mx-auto justify-content-center" id="navbarNav">
+            <!-- nav brand (on expand)-->
+            <div class="col-8 col-lg-3 d-none d-lg-block">
+              <a class="navbar-brand text-primary brand-font" href="index.html">BUTLER-MILES</a>
+            </div>
+            <!-- nav category btns -->
+            <ul class="col-8 col-lg-6 navbar-nav d-flex justify-content-lg-evenly gap-2 px-1 brand-font">
+              <!-- Antiques -->
+              <li class="nav-item">
+                <a role="button" href="antiques.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ANTIQUES</a>
+              </li>
+              <!-- Art -->
+              <li class="nav-item">
+                <a role="button" href="art.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ART</a>
+              </li>
+               <!-- Militaria -->
+              <li class="nav-item">
+                <a role="button" href="militaria.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">MILITARIA</a>
+              </li>
+              <!-- Vintage -->
+              <li class="nav-item">
+                <a role="button" href="vintage.html" class="btn btn-secondary border-primary text-primary rounded-pill w-100">VINTAGE</a>
+              </li>
+            </ul>
+            <!-- nav links -->
+            <ul class="col-8 col-lg-3 navbar-nav justify-content-center justify-content-lg-end brand-font">
+              <li class="nav-item text-center">
+                <a class="nav-link active text-primary" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link text-primary" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- offset calculated dymanically in script.js -->
+    <main class="nav-height-offset">
+
+      <!-- Landing-->
+      <section>
+        <div class="container-fluid">
+            <div class="row d-flex flex-column-reverse flex-lg-row">
+                <!-- Landing-left - category cards -->
+                <div class="col-12 col-lg-6">
+                  <!-- top row -->
+                    <div class="row pb-3">
+                        <!-- Antiques card -->
+                        <div class="col-12 col-sm-6">
+                            <div class="card h-100 border-none text-secondary m-2">
+                                <div class="card-body d-flex flex-column justify-content-between border-none p-2 pb-0">
+                                    <div class="p-0">
+                                        <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
+                                            <h3>ANTIQUES</h3>
+                                        </div>
+                                        <div class="card-text">
+                                            <p class="brand-font fst-italic pb-2">Ceramics, Coins, Jewellery, Silver</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eaque saepe facere! Ipsum, excepturi voluptatibus!</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-2">
+                                        <a href="antiques.html" role="button" class="btn border-primary text-secondary rounded-pill shadow-sm btn-press">See more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Art card -->
+                        <div class="col-12 col-sm-6">
+                            <div class="card h-100 border-none text-secondary m-2">
+                                <div class="card-body d-flex flex-column justify-content-between border-none p-2 pb-0">
+                                    <div class="p-0">
+                                        <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
+                                            <h3>ART</h3>
+                                        </div>
+                                        <div class="card-text">
+                                            <p class="brand-font fst-italic pb-2">Originals, Prints</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ab ratione provident voluptates consequatur distinctio voluptate doloremque voluptatibus autem assumenda.</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-2">
+                                        <a href="art.html" role="button" class="btn border-primary text-secondary rounded-pill shadow-sm btn-press">See more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- bottom row -->
+                    <div class="row pb-3">
+                        <!-- Militaria Card -->
+                        <div class="col-12 col-sm-6">
+                            <div class="card h-100 border-none text-secondary m-2">
+                                <div class="card-body d-flex flex-column justify-content-between border-none p-2 pb-0">
+                                    <div class="p-0">
+                                        <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
+                                            <h3>MILITARIA</h3>
+                                        </div>
+                                        <div class="card-text">
+                                            <p class="brand-font fst-italic pb-2">Badges, Bayonets/Swords, Ephemera, Medals, Uniforms</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minima itaque tempora at blanditiis! Error nihil adipisci nam?</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-2">
+                                        <a href="militaria.html" role="button" class="btn border-primary text-secondary rounded-pill shadow-sm btn-press">See more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Vintage card -->
+                        <div class="col-12 col-sm-6">
+                            <div class="card h-100 border-none text-secondary m-2">
+                                <div class="card-body d-flex flex-column justify-content-between border-none p-2 pb-0">
+                                    <div class="p-0">
+                                        <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
+                                            <h3>VINTAGE</h3>
+                                        </div>
+                                        <div class="card-text">
+                                            <p class="brand-font fst-italic pb-2">Collectibles, Toys</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A explicabo quaerat repellat quod, doloribus molestias laboriosam doloremque libero, alias optio magni atque.</p>
+                                        </div>
+                                    </div>
+                                    <div class="pb-2">
+                                        <a href="vintage.html" role="button" class="btn border-primary text-secondary rounded-pill shadow-sm btn-press">See more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Landing-right - title  -->
+                <div class="col-12 col-lg-6 bg-secondary d-flex align-items-center justify-content-center pt-3">
+                    <div class="d-flex flex-column justify-content-center">
+                        <h1 class="display-1 text-primary brand-font text-center">BUTLER-MILES</h1>
+                        <h3 class="lead text-primary text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusamus accusantium ex molestiae nemo autem.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- contact sidebar btn -->
+    <section id="offcanvas-trigger-button">
+      <button class="btn contact-btn text-secondary border-primary btn-metallic" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="contact-sidebar">Contact us</button>
+    </section>
+
+    <!-- contact sidebar component -->
+    <section id="offcanvas-contact-form">
+      <div class="offcanvas offcanvas-end bg-secondary text-primary" tabindex="-1" id="sidebar" aria-labelledby="offcanvasContactForm">
+        <div class="offcanvas-header">
+          <h4 class="offcanvas-title" id="contact-sidebar">Contact Us</h4>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <!-- contact form -->
+          <form action="">
+            <!-- name field -->
+            <div class="mb-3">
+              <label for="name-input" class="form-label">Name:</label>
+              <input type="text" class="form-control" id="name-input">
+            </div>
+            <!-- phone field -->
+            <div class="mb-3">
+              <label for="phone-input" class="form-label">Phone:</label>
+              <input type="tel" class="form-control" id="phone-input">
+            </div>
+            <!-- email field -->
+            <div class="mb-3">
+              <label for="email-input" class="form-label">Email address:</label>
+              <input type="email" class="form-control" id="email-input">
+            </div>
+            <!-- subject field -->
+            <div class="mb-3">
+              <label for="subject-input" class="form-label">Reason for your enquiry:</label>
+              <select class="form-select" name="" id="subject">
+                <option value="enquiry" selected>General enquiry</option>
+                <option value="selling">Interested in selling</option>
+                <option value="specific-item">Looking for a specific item</option>
+              </select>
+            </div>
+            <!-- query text field -->
+            <div class="mb-3">
+              <label for="query" class="form-label">Your query:</label>
+              <textarea name="" id="query" class="form-control" cols="20" rows="5" maxlength="1500" placeholder="Please briefly explain the nature of your enquiry and I will respond ASAP..."></textarea>
+            </div>
+            <!-- submit btn -->
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-secondary border-primary btn-press text-primary rounded-pill py-2">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
