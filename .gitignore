@@ -1,0 +1,26 @@
+# Dependency directories
+node_modules/
+
+# Production build directory
+dist/
+
+# SCSS compilation output
+src/css/main.css
+src/css/main.css.map
+
+# System files
+.DS_Store
+
+# Editor directories and files
+.vscode/
+*.swp
+*.swo
+*.swn
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env

@@ -1,3 +1,22 @@
+<!-- in .eleventy.js -->
+module.exports = function(eleventyConfig) {
+    
+    eleventyConfig.addPassthroughCopy('src/assets');
+    eleventyConfig.addPassthroughCopy('src/css');
+    eleventyConfig.addPassthroughCopy('src/js');
+    
+    return {
+        dir: {
+<!-- Contains files for development-->
+            "input": "src",
+<!-- Contains generated files for deployment -->
+            "output": "dist",
+<!-- Contains template files (nunjuks) -->
+            "includes": "_includes",
+        }
+    };
+}
+
 <!-- in package.json: -->
 "scripts": {
   "build:sass": "sass src/scss/main.scss src/css/main.css",
@@ -5,9 +24,8 @@
   "build:eleventy": "eleventy",
   "build": "npm run build:sass && npm run build:eleventy",
   "serve": "eleventy --serve",
-<!--  npm package concurrently used for cross-platform compatibility  -->
-<!-- Without concurrently, would be "dev": "npm run watch:sass & npm run serve" -->
-<!-- '&' used to run commands in parallel -->
+<!-- npm package 'concurrently' used for cross-platform compatibility  -->
+<!-- Without concurrently, would be '"dev": "npm run watch:sass & npm run serve"'.'&' used to run commands in parallel -->
   "dev": "concurrently \"npm run watch:sass\" \"npm run serve\"",
 <!-- '&&' runs commands sequentially - no prblem cross-platform -->
   "start": "npm run build && npm run serve"
