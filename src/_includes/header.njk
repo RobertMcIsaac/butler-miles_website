@@ -1,0 +1,47 @@
+        <header>
+          <!-- nav bar -->
+          <nav class="navbar fixed-top navbar-expand-lg bg-secondary border-bottom border-primary">
+            <div class="container-fluid my-2">
+              <!-- nav brand (on collapse) -->
+              <a class="navbar-brand text-primary brand-font d-lg-none me-auto" href="/">BUTLER-MILES</a>
+               <!-- nav toggler -->
+              <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon rounded"></span>
+              </button>
+              <div class="row collapse navbar-collapse mx-auto justify-content-center" id="navbarNav">
+                <!-- nav brand (on expand)-->
+                <div class="col-8 col-lg-3 d-none d-lg-block">
+                  <a class="navbar-brand text-primary brand-font" href="/">BUTLER-MILES</a>
+                </div>
+                <!-- nav category btns -->
+                <ul class="col-8 col-lg-6 navbar-nav d-flex justify-content-lg-evenly gap-2 px-1 brand-font">
+                  <!-- Antiques -->
+                  <li class="nav-item{{ ' active' if pageId == 'antiques' }}"{% if pageId == 'antiques' %} aria-current="page"{% endif %}>
+                    <a role="button" href="/antiques/" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ANTIQUES</a>
+                  </li>
+                  <!-- Art -->
+                  <li class="nav-item{{ ' active' if pageId == 'art' }}"{% if pageId == 'art' %} aria-current="page"{% endif %}>
+                    <a role="button" href="/art/" class="btn btn-secondary border-primary text-primary rounded-pill w-100">ART</a>
+                  </li>
+                   <!-- Militaria -->
+                  <li class="nav-item{{ ' active' if pageId == 'militaria' }}"{% if pageId == 'militaria' %} aria-current="page"{% endif %}>
+                    <a role="button" href="/militaria/" class="btn btn-secondary border-primary text-primary rounded-pill w-100">MILITARIA</a>
+                  </li>
+                  <!-- Vintage -->
+                  <li class="nav-item{{ ' active' if pageId == 'vintage' }}"{% if pageId == 'vintage' %} aria-current="page"{% endif %}>
+                    <a role="button" href="/vintage/" class="btn btn-secondary border-primary text-primary rounded-pill w-100">VINTAGE</a>
+                  </li>
+                </ul>
+                <!-- nav links -->
+                <ul class="col-8 col-lg-3 navbar-nav justify-content-center justify-content-lg-end brand-font">
+                  <li class="nav-item text-center">
+                    <a class="nav-link text-primary{{ ' active' if pageId == 'home' }}"{% if pageId == 'home' %} aria-current="page"{% endif %} href="/">HOME</a>
+                  </li>
+                  <li class="nav-item text-center">
+                    <a class="nav-link text-primary{{ ' active' if pageId == 'contact' }}"{% if pageId == 'contact' %} aria-current="page"{% endif %} href="/contact/">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
