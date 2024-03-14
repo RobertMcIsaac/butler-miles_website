@@ -34,11 +34,14 @@
                 </ul>
                 <!-- nav links -->
                 <ul class="col-8 col-lg-3 navbar-nav justify-content-center justify-content-lg-end brand-font">
-                  <li class="nav-item text-center">
-                    <a class="nav-link text-primary{{ ' active' if pageId == 'home' }}"{% if pageId == 'home' %} aria-current="page"{% endif %} href="/">HOME</a>
-                  </li>
+                  {# <li class="nav-item text-center">
+                    <a class="nav-link text-primary{{ ' active' if pageId == 'about' }}"{% if pageId == 'about' %} aria-current="page"{% endif %} href="/about/">ABOUT</a>
+                  </li> #}
                   <li class="nav-item text-center">
                     <a class="nav-link text-primary{{ ' active' if pageId == 'contact' }}"{% if pageId == 'contact' %} aria-current="page"{% endif %} href="/contact/">CONTACT</a>
+                  </li>
+                  <li class="nav-item text-center">
+                    <a class="nav-link text-primary{{ ' active' if pageId == 'home' }}"{% if pageId == 'home' %} aria-current="page"{% endif %} href="/">HOME</a>
                   </li>
                 </ul>
               </div>

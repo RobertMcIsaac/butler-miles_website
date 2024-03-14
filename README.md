@@ -11,7 +11,7 @@ module.exports = function(eleventyConfig) {
             "input": "src",
 <!-- Contains generated files for deployment -->
             "output": "dist",
-<!-- Contains template files (nunjuks) -->
+<!-- Contains template files (nunjucks/.njk) -->
             "includes": "_includes",
         }
     };
