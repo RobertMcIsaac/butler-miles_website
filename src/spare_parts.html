@@ -626,3 +626,65 @@
 </body>
 
 </html>
+
+
+
+
+        <!-- antiques - cards -->
+
+        <!-- CARD CONTAINER -->
+        <section>
+          <div class="container-lg mt-3">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-6 mb-5">
+
+                <!-- CARD -->
+                <div class="card border-none text-secondary mt-2">
+                  <div class="card-body border-none p-2">
+                    <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
+                      <h3>{{ card_heading }}</h3>
+                    </div>
+                    <div class="card-text">
+                      <p>{{ card description }}</p>
+                    </div>
+
+                    <!-- CARD CAROUSEL -->
+                    <div class="d-flex justify-content-center">
+                      <div id="{{ card_carousel_id }}" class="carousel cross-fade" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#{{ card_carousel_id }}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#{{ card_carousel_id }}" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#{{ card_carousel_id }}" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#{{ card_carousel_id }}" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+
+                          <!-- CARD CAROUSEL ITEM -->
+                          <div class="carousel-item active">
+                            <img src="{{ card_carousel_image }}" class="d-block w-100" alt="{{ card_carousel_image_label }}">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>{{ card_carousel_image_label }}</h5>
+                              <p><sm>May not represent current stock.</sm></p>
+                            </div>
+                          </div> 
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#{{ card_carousel_id }}" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#{{ card_carousel_id }}" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>

@@ -5,11 +5,11 @@
 
 
   .btn-secondary {
-    border-color: #ddbb62 #967a30 #967a30 #ddbb62; // two-tone/shiny border effect
+    border-color: #ddbb62 #967a30 #967a30 #ddbb62 !important; // two-tone/shiny border effect
   
     &:hover,
     &:focus,
     &:active {
-      border-color: darken($primary, 10%); // Adjust border-color on hover/focus/active
+      border-color: darken($primary, 10%) !important; // Adjust border-color on hover/focus/active
     }
   }

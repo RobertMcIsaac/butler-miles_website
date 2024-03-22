@@ -1,0 +1,16 @@
+---
+layout: base.njk
+---
+        {% include "category_title.njk" %}    
+
+        <section>
+            <div class="container-lg mt-3">
+              <div class="row justify-content-center">
+                {% for card in cards %}
+                <div class="col-6 col-md-3 mb-5">
+                  {% include "category_card.njk" %}
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </section>

@@ -1,0 +1,19 @@
+<!-- ---
+layout: category_page.njk
+--- -->
+                <!-- CARD -->
+                <div class="card border-none text-secondary mt-2">
+                  <div class="card-body border-none p-2">
+                    {% for card in cards %}
+                    <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
+                      <h3>{{ card.heading }}</h3>
+                    </div>
+                    <div class="card-text">
+                      <p>{{ card.description }}</p>
+                    </div>
+                    {% endfor %}
+                    <!-- CAROUSEL GOES HERE -->
+
+                  </div>
+                </div>
+                <!-- CARD END -->

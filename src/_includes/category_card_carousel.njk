@@ -1,0 +1,33 @@
+                    <!-- CARD CAROUSEL -->
+                    <div class="d-flex justify-content-center">
+                        <div id="{{ card_carousel_id }}" class="carousel cross-fade" data-bs-ride="true">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#{{ card_carousel_id }}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#{{ card_carousel_id }}" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#{{ card_carousel_id }}" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#{{ card_carousel_id }}" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          </div>
+                          <div class="carousel-inner">
+  
+                            <!-- CARD CAROUSEL ITEM -->
+                            <div class="carousel-item active">
+                              <img src="{{ card_carousel_image }}" class="d-block w-100" alt="{{ card_carousel_image_label }}">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h5>{{ card_carousel_image_label }}</h5>
+                                <p><sm>May not represent current stock.</sm></p>
+                              </div>
+                            </div> 
+                            <!-- CARD CAROUSEL ITEM END -->
+  
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#{{ card_carousel_id }}" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#{{ card_carousel_id }}" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- CARD CAROUSEL END -->
