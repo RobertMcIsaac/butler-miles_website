@@ -1,4 +1,3 @@
-                      <!-- Carousel -->
                       <div class="d-flex justify-content-center">
                         <div id="{{ card.carousel.carousel_id }}" class="carousel cross-fade" data-bs-ride="true">
                             <div class="carousel-indicators">
@@ -8,6 +7,8 @@
                               <button type="button" data-bs-target="#{{ card.carousel.carousel_id }}" data-bs-slide-to="3" aria-label="Slide 4"></button>
                             </div>
                             <div class="carousel-inner">
+
+                            <!-- Carousel images -->
                             {% for image in card.carousel.images %}
                                 <div class="carousel-item {% if loop.first %}active{% endif %}">
                                     <img src="{{ image.src }}" class="d-block w-100" alt="{{ image.label }}">
