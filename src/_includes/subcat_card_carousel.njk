@@ -9,7 +9,13 @@
                             </div>
                             <div class="carousel-inner">
                             {% for image in card.carousel.images %}
-                                {% include "subcat_card_carousel_item.njk" %}
+                                <div class="carousel-item {% if loop.first %}active{% endif %}">
+                                    <img src="{{ image.src }}" class="d-block w-100" alt="{{ image.label }}">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>{{ image.label }}</h5>
+                                        <p><sm>May not represent current stock.</sm></p>
+                                    </div>
+                                </div>
                             {% endfor %}
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#{{ card.carousel.carousel_id }}" data-bs-slide="prev">
