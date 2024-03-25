@@ -1,138 +1,43 @@
 ---
 layout: base.njk
+
 title: Art
 pageId: art
 sidebar_vertical_btn: true
+
+page_heading: ART
+sub_category_headings: Originals, Prints
+page_description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint harum magnam atque suscipit incidunt unde amet totam, tenetur, veniam dicta nihil id quae, voluptates natus. Labore culpa, optio fugiat doloremque quisquam velit veritatis, omnis dolorum iusto distinctio ipsa eius debitis!
+
+cards:
+  - subcat_title: Originals
+    subcat_description: Originals description...
+    carousel:
+      carousel_id: originalsCarousel
+      images:
+        - src: https://fakeimg.pl/300/
+          label: Blank image 1
+        - src: https://fakeimg.pl/300/
+          label: Blank image 2
+
+  - subcat_title: Prints
+    subcat_description: Prints description...
+    carousel:
+      carousel_id: printsCarousel
+      images:
+      - src: https://fakeimg.pl/300/
+        label: Blank image 1
+      - src: https://fakeimg.pl/300/
+        label: Blank image 2
 ---
-      <section>
-        <div class="container-fluid justify-content-center py-3">
-            <!-- Art - title/ description -->
-            <div class="row justify-content-center">
-              <div class="col col-lg-10 text-secondary mx-4">
-                  <h1 class="display-2 brand-font border-bottom border-2 border-primary pb-3">ART</h1>
-                  <p class="brand-font fst-italic pb-1">Originals, Prints</p>
-                  <p class="mx-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint harum magnam atque suscipit incidunt unde amet totam, tenetur, veniam dicta nihil id quae, voluptates natus. Labore culpa, optio fugiat doloremque quisquam velit veritatis, omnis dolorum iusto distinctio ipsa eius debitis!</p>
-              </div>
-            </div>
-            <!-- Art - 'Go to' dopdown links -->
-            <div class="row justify-content-center">
-              <div class="col-10 col-sm-4 col-md-3 col-lg-2">
-                  <div class="dropdown dropdown-center">
-                      <button class="btn btn-secondary border-twotone border-2 text-primary dropdown-toggle rounded-pill w-100 shadow btn-press py-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">Go to</button>
-                      <ul class="dropdown-menu border-primary">
-                          <li class="dropdown-item text-secondary"><a href="#originals" class="nav-link">Originals</a></li>
-                          <li class="dropdown-item text-secondary"><a href="#prints" class="nav-link">Prints</a></li>  
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Art - carousel -->
-        <div class="container-md my-3">
-          <div class="row justify-content-center">
-              <div class="col-12 col-lg-8 mb-3">
-                  <div id="militariaCarousel" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#militariaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#militariaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#militariaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      <button type="button" data-bs-target="#militariaCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                      </div>
-                      <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <img src="https://fakeimg.pl/250x100/" class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                          <h5>First slide label</h5>
-                          <p><sm>May not represent current stock.</sm></p>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <img src="https://fakeimg.pl/250x100/" class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                          <h5>Second slide label</h5>
-                          <p><sm>May not represent current stock.</sm></p>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <img src="https://fakeimg.pl/250x100/" class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                          <h5>Third slide label</h5>
-                          <p><sm>May not represent current stock.</sm></p>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <img src="https://fakeimg.pl/250x100/" class="d-block w-100" alt="...">
-                          <div class="carousel-caption d-none d-md-block">
-                          <h5>Fourth slide label</h5>
-                          <p><sm>May not represent current stock.</sm></p>
-                          </div>
-                      </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#militariaCarousel" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#militariaCarousel" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                      </button>
-                  </div>
-              </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Art - cards -->
-      <section>
-        <div class="container-fluid bg-secondary py-4">
-          <!-- Originals card -->
-          <div id="originals" class="row">
-            <div class="col col-lg-8 mb-4">
-              <div class="card landing-card text-secondary mt-2">
-                <div class="card-body border-none">
-                    <div class="row">
-                      <div class="col-4">
-                        <div class="">
-                          <img src="https://fakeimg.pl/300/" class="img-fluid rounded-start" alt="...">
-                        </div>
-                      </div>
-                      <div class="col-8">
-                        <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
-                          <h3>Originals</h3>
-                        </div>
-                        <div class="card-text">
-                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis molestias officia ad, natus accusantium numquam ea sapiente! Dolorum odio eos asperiores est maxime consectetur inventore provident adipisci, ipsa sit quis?</p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Prints card -->
-          <div id="prints" class="row justify-content-center justify-content-lg-end">
-            <div class="col-lg-8 mb-4">
-              <div class="card landing-card text-secondary mt-2">
-                <div class="card-body border-none">
-                  <div class="row">
-                    <div class="col-8">
-                      <div class="card-title border-bottom border-2 border-primary pb-3 brand-font">
-                        <h3>Prints</h3>
-                      </div>
-                      <div class="card-text">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis molestias officia ad, natus accusantium numquam ea sapiente! Dolorum odio eos asperiores est maxime consectetur inventore provident adipisci, ipsa sit quis?</p>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="">
-                          <img src="https://fakeimg.pl/300/" class="img-fluid rounded-start" alt="...">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+{% include "page_heading.njk" %}
+<section>
+  <div class="container-lg mt-3">
+    <div class="row justify-content-center">
+      {% for card in cards %}
+        {% include "subcat_card_layout.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
