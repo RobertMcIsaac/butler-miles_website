@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    
     {% include "header.njk" %}
 
     <!-- <main> margin offset calculated dymanically in script.js -->
@@ -22,7 +23,7 @@
     {% include "footer.njk" %}
 
     {% if sidebar_vertical_btn %}
-    {% include "sidebar_vertical_btn.njk" %}
+      {% include "sidebar_vertical_btn.njk" %}
     {% endif %}
 
     {% include "sidebar.njk" %}
