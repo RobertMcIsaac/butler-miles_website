@@ -38,11 +38,11 @@ cards:
 <div class="container-fluid pt-5">
   <div class="row bg-secondary py-5">
     <!-- Landing - title -->
-    <div class="col-12 col-lg-6 bg-secondary text-primary d-flex flex-column justify-content-center align-items-center py-2">
+    <div class="col-12 col-lg-6 bg-secondary text-primary d-flex flex-column justify-content-center align-items-center text-center py-2">
       <!-- title -->
-      <h1 class="display-1 brand-font">BUTLER-MILES</h1>  
+      <h1 class="display-2 brand-font">BUTLER-MILES</h1>  
       <!-- tagline -->
-      <h3 class="lead text-center">{{ tagline }}</h3>
+      <h3 class="lead">{{ tagline }}</h3>
       <!-- contact btn -->
       <div class="text-center my-3">
         <!-- <button class="btn btn-primary text-secondary fw-semibold border-2 border-twotone rounded-pill shadow btn-press py-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="contact-sidebar">Contact us</button> -->
@@ -51,25 +51,25 @@ cards:
     </div>
     
     <!-- Landing - carousel -->
-    <div class="col-12 col-lg-6">
-        <div id="landingCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <div class="col-12 col-lg-6 my-auto">
+      <div id="landingCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- Carousel images -->
+            {% for image in carousel_images %}
+            <div class="carousel-item {% if loop.first %}active{% endif %}">
+                <img src="{{ image.src }}" class="d-block w-100" alt="{{ image.label }}">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>{{ image.label }}</h5>
+                    <p><sm>May not represent current stock.</sm></p>
+                </div>
             </div>
-            <div class="carousel-inner">
-              <!-- Carousel images -->
-              {% for image in carousel_images %}
-              <div class="carousel-item {% if loop.first %}active{% endif %}">
-                  <img src="{{ image.src }}" class="d-block w-100" alt="{{ image.label }}">
-                  <div class="carousel-caption d-none d-md-block">
-                      <h5>{{ image.label }}</h5>
-                      <p><sm>May not represent current stock.</sm></p>
-                  </div>
-              </div>
-              {% endfor %}              
+            {% endfor %}              
             <button class="carousel-control-prev" type="button" data-bs-target="#landingCarousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
@@ -78,7 +78,8 @@ cards:
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-        </div>
+          </div>
+      </div>
     </div>
   </div>
 </div>
