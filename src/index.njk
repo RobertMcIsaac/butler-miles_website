@@ -54,11 +54,11 @@ cards:
     <div class="col-12 col-lg-6 my-auto">
       <div id="landingCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            {% for image in carousel_images %}
+              <button type="button" data-bs-target="#{{ card.carousel.carousel_id }}" data-bs-slide-to="{{ loop.index0 }}" class="{{ 'active' if loop.first }}" aria-current="{{ 'true' if loop.first }}" aria-label="Slide {{ loop.index }}"></button>
+            {% endfor %}
           </div>
+
           <div class="carousel-inner">
             <!-- Carousel images -->
             {% for image in carousel_images %}
@@ -69,7 +69,8 @@ cards:
                       <p><sm>May not represent current stock.</sm></p>
                   </div>
               </div>
-            {% endfor %}              
+            {% endfor %}   
+                       
             <button class="carousel-control-prev" type="button" data-bs-target="#landingCarousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
