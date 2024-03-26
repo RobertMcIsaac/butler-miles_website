@@ -45,7 +45,8 @@
 
 
 /* shiny effect border - primary/gold */
-.btn.border-twotone {
+.btn.border-twotone,
+.border-twotone {
     border-color: #ddbb62 #967a30 #967a30 #ddbb62;
 }
 
