@@ -20,6 +20,11 @@
   }
 }
 
+.btn-light:hover {
+  // light primary shade on hover
+  background-color: mix($primary, #ffffff, 80%);
+}
+
 .btn-secondary {
   // two-tone/shiny border effect
   border-color: #ddbb62 #967a30 #967a30 #ddbb62 !important;
