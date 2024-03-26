@@ -49,6 +49,7 @@ cards:
         <button class="btn btn-metallic text-secondary fw-semibold border-twotone rounded-pill shadow btn-press py-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="contact-sidebar">Contact us</button>
       </div>
     </div>
+    
     <!-- Landing - carousel -->
     <div class="col-12 col-lg-6">
         <div id="landingCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -59,7 +60,6 @@ cards:
               <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
-
               <!-- Carousel images -->
               {% for image in carousel_images %}
               <div class="carousel-item {% if loop.first %}active{% endif %}">
@@ -69,8 +69,7 @@ cards:
                       <p><sm>May not represent current stock.</sm></p>
                   </div>
               </div>
-              {% endfor %}
-              
+              {% endfor %}              
             <button class="carousel-control-prev" type="button" data-bs-target="#landingCarousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>

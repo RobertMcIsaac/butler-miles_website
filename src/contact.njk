@@ -3,10 +3,22 @@ layout: base.njk
 
 title: Contact
 pageId: contact
-sidebar_vertical_btn: False
+sidebar_vertical_btn: false
 
 page_heading: CONTACT
 page_description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni nesciunt aperiam, ullam suscipit optio?
+
+staff:
+  nick:
+    name: Nick Butler-Miles
+    bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore ullam blanditiis maiores provident, dignissimos fuga corporis incidunt, quas itaque ab quisquam sit neque voluptates adipisci quos dolorum, dicta vitae! Temporibus ipsum aperiam magni, beatae unde labore excepturi deserunt non.
+    image: https://fakeimg.pl/300/
+    image_label: Image of Nick Butler-Miles, owner of Butler-Miles.
+  maggie:
+    name: Margeret Butler-Miles
+    bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore ullam blanditiis maiores provident, dignissimos fuga corporis incidunt, quas itaque ab quisquam sit neque voluptates adipisci quos dolorum, dicta vitae! Temporibus ipsum aperiam magni, beatae unde labore excepturi deserunt non.
+    image: https://fakeimg.pl/300/
+    image_label: Image of Margaret Butler-Miles (a Corgi).
 ---
       <!-- Contact page heading -->
       {% include "page_heading.njk" %}
@@ -83,15 +95,15 @@ page_description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Even
                   <div class="row">
                     <div class="col-12 col-md-8">
                       <div class="card-title brand-font">
-                        <h5>Nick Butler-Miles</h5>
+                        <h5>{{ staff.nick.name }}</h5>
                       </div>
                       <div class="card-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore ullam blanditiis maiores provident, dignissimos fuga corporis incidunt, quas itaque ab quisquam sit neque voluptates adipisci quos dolorum, dicta vitae! Temporibus ipsum aperiam magni, beatae unde labore excepturi deserunt non.</p>
+                        <p>{{ staff.nick.bio }}</p>
                       </div>
                     </div>
                     <div class="col-12 col-md-4">
                       <div class="d-flex justify-content-center justify-content-lg-end">
-                        <img class="img-fluid" src="https://fakeimg.pl/300/" alt="...">
+                        <img class="img-fluid" src="{{ staff.nick.image }}" alt="{{ staff.nick.image_label }}">
                       </div>
                     </div>
                   </div>
@@ -108,15 +120,15 @@ page_description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Even
                   <div class="row d-md-flex flex-row-reverse">
                     <div class="col-12 col-md-8 ">
                       <div class="card-title brand-font ">
-                        <h5>Margaret Butler-Miles</h5>
+                        <h5>{{ staff.maggie.name }}</h5>
                       </div>
                       <div class="card-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempore ullam blanditiis maiores provident, dignissimos fuga corporis incidunt, quas itaque ab quisquam sit neque voluptates adipisci quos dolorum, dicta vitae! Temporibus ipsum aperiam magni, beatae unde labore excepturi deserunt non.</p>
+                        <p>{{ staff.maggie.bio }}</p>
                       </div>
                     </div>
                     <div class="col-12 col-md-4">
                       <div class="d-flex justify-content-center justify-content-lg-start">
-                        <img class="img-fluid" src="https://fakeimg.pl/300/" alt="...">
+                        <img class="img-fluid" src="{{ staff.maggie.image }}" alt="{{ staff.maggie.image_label }}">
                       </div>
                     </div>
                   </div>
