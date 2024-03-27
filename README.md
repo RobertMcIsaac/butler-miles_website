@@ -1,61 +1,70 @@
-<!-- in .eleventy.js -->
-module.exports = function(eleventyConfig) {
-    
-    eleventyConfig.addPassthroughCopy('src/assets');
-    eleventyConfig.addPassthroughCopy('src/css');
-    eleventyConfig.addPassthroughCopy('src/js');
-    
-    return {
-        dir: {
-<!-- Contains files for development-->
-            "input": "src",
-<!-- Contains generated files for deployment -->
-            "output": "dist",
-<!-- Contains template files (nunjucks/.njk) -->
-            "includes": "_includes",
-        }
-    };
-}
+# Butler-Miles Website
 
-<!-- in package.json: -->
-"scripts": {
-  "build:sass": "sass src/scss/main.scss src/css/main.css",
-  "watch:sass": "sass --watch src/scss:src/css",
-  "build:eleventy": "eleventy",
-  "build": "npm run build:sass && npm run build:eleventy",
-  "serve": "eleventy --serve",
-<!-- npm package 'concurrently' used for cross-platform compatibility  -->
-<!-- Without concurrently, would be '"dev": "npm run watch:sass & npm run serve"'.'&' used to run commands in parallel -->
-  "dev": "concurrently \"npm run watch:sass\" \"npm run serve\"",
-<!-- '&&' runs commands sequentially - no prblem cross-platform -->
-  "start": "npm run build && npm run serve"
-}
+## Overview
 
-<!-- "build:sass" compiles SCSS to CSS once. Used both as part of the dev process and before running Eleventy for production builds.
+This is a website for Butler-Miles: a local buying-and-selling business dealing in antiques, art, militaria and vintage items. This site showcases the various types of items the business deals with but does not facilitate online transactions. Instead, it provides information and contact details for potential buyers or sellers interested in engaging with the business.
 
-"watch:sass" watches SCSS files for changes and compiles them to CSS automatically, intended for use during development.
+## Features
 
-"build:eleventy" explicitly defines running Eleventy's build process, useful for isolating this step if needed.
+- Showcases categories of items that Butler-Miles buys and sells.
+- Contact form for inquiries from potential buyers or sellers.
+- Responsive design using Bootstrap, ensuring the site is accessible on various devices.
 
-"build" combines SCSS compilation and Eleventy build steps, ensuring both your styles and static site are built from the latest files.
+## Technologies Used
 
-"serve" continues to serve your site with Eleventy, including live reloading.
+- **HTML**: Structure of the web pages.
+- **CSS**: Styling of the web content.
+- **JavaScript**: Interactive elements.
+- **Bootstrap**: Responsive design framework.
+- **SASS**: CSS preprocessor for more efficient styling.
+- **Eleventy (11ty)**: Static site generator used for building the website.
+- **Nunjucks**: Templating engine used with Eleventy for dynamic content rendering.
+- **Concurrently**: Utility used to run multiple npm commands concurrently during development.
 
-"dev" runs both the SCSS watcher and Eleventy's server in parallel, using concurrently for compatibility across different operating systems.
+## Getting Started
 
-"start" is designed to run the full build process and then serve the site, ideal for a quick start-up of your development environment or for testing the production build locally. -->
+### Prerequisites
 
+- Node.js and npm installed on your machine.
 
+### Installation
 
-<!-- in settings.json: -->
-    "liveSassCompile.settings.formats": [
-        {
-            "format": "expanded",
-            "extensionName": ".css",
-<!-- when storing in css folder within project root directory(instead of src), use "/css" as value for "savePath" -->            
-            "savePath": "/src/css",
-        }
-    ],
+1. Clone the repository to your local machine:
 
+    ```bash
+    git clone https://github.com/RobertMcIsaac/butler-miles_website.git
+    ```
 
-Front matter data:
+2. Navigate to the project directory:
+
+    ```bash
+    cd butler-miles_website
+    ```
+
+3. Install the dependencies:
+
+    ```bash
+    npm install
+    ```
+
+### Running the Project Locally
+
+To run the website locally and see your changes in real-time, execute:
+
+```bash
+npm run dev
+```
+
+This command compiles the SASS files and runs Eleventy's development server, which watches for changes to your files and automatically refreshes the browser.
+
+## License
+
+This project is not currently under any specific open source license.
+
+## Author
+
+- Robert McIsaac (https://github.com/RobertMcIsaac)
+
+## Acknowledgments
+
+Special thanks to all the open-source tools and libraries that made this project possible.
