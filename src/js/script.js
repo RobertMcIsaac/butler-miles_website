@@ -82,7 +82,10 @@ function initializeLayoutAdjustments() {
     
     // Adjust layout on resize
     window.addEventListener('resize', adjustMainLayout);
+
+    // Update copyright year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
 }
 
-// Initialise layout adjustments on DOM loading
+// Initialise layout adjustments on DOMContentLoaded
 document.addEventListener('DOMContentLoaded', initializeLayoutAdjustments);
