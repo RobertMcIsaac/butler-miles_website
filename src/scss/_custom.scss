@@ -1,8 +1,87 @@
+// TEXT
 
+// Butler-Miles brand font
 .brand-font {
   font-family: $font-family-brand;
 }
 
+
+// BUTTONS
+
+// Navbar category buttons equal width for screens >= lg
+@media (min-width: 992px) {
+  .navbar-nav .nav-item,
+  .nav .nav-item {
+    // Equal width - 4 nav buttons
+    width: 25%;
+  }
+}
+
+// current page nav-link/btn underlined
+.btn.active,
+.nav-link.active {
+    text-decoration: underline;
+}
+
+.btn-light:hover {
+  // light primary background-color on hover
+  background-color: mix($primary, #ffffff, 80%);
+  // primary background-color on active
+  &:active {
+    background-color: $primary;
+  }
+}
+
+.btn-secondary {
+  // two-tone border effect
+  border-color: #ddbb62 #967a30 #967a30 #ddbb62 !important;
+  // Darken border-color on hover/focus/active
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: darken($primary, 10%) !important; 
+  }
+}
+
+// // Two-tone border - primary/gold 
+// .btn.border-twotone,
+// .border-twotone {
+//     border-color: #ddbb62 #967a30 #967a30 #ddbb62;
+// }
+
+// Sidebar/offcanvas trigger button positioning
+.contact-btn {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 100;
+  // rotate to vertical
+  transform: translateX(40%) rotate(-90deg);
+  transform-origin: center;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+  padding: 0 1.5rem;
+}
+
+// Metallic gold effect
+.btn-metallic {
+  background: linear-gradient(top, #ddbb62, #f2f2f2 25%, #ffffff 38%, #c5c5c5 63%, #f7f7f7 87%, #ddbb62);
+  background: -webkit-linear-gradient(top, #ddbb62, #fea 25%, #ffffff 38%, #dc8  63%, #fea 87%, #ddbb62);
+  box-shadow: inset 0px 1px 0px rgba(255,255,255,1),0px 1px 3px rgba(0,0,0,0.3);
+}
+
+// Button press effect
+.btn-press:active {
+  // Moves the button down
+  transform: translateY(3px);
+  // Reduces shadow 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+// NAV
+
+// Navbar toggler icon
 .navbar-toggler-icon {
   // Change toggler icon to primary colour
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='%23" + str-slice(ie-hex-str($primary), 4, 9) + "' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -20,22 +99,16 @@
   }
 }
 
-.btn-light:hover {
-  // light primary background-color on hover
-  background-color: mix($primary, #ffffff, 80%);
-  // primary background-color on hover
-  &:active {
-    background-color: $primary;
-  }
+
+// LANDING PAGE
+
+.card.border-none {
+  border: none;
 }
 
-.btn-secondary {
-  // two-tone/shiny border effect
-  border-color: #ddbb62 #967a30 #967a30 #ddbb62 !important;
-  // Darken border-color on hover/focus/active
-  &:hover,
-  &:focus,
-  &:active {
-    border-color: darken($primary, 10%) !important; 
-  }
+
+// FOOTER
+
+.font-footer {
+  font-size: smaller;
 }
