@@ -21,8 +21,12 @@
 }
 
 .btn-light:hover {
-  // light primary shade on hover
+  // light primary background-color on hover
   background-color: mix($primary, #ffffff, 80%);
+  // primary background-color on hover
+  &:active {
+    background-color: $primary;
+  }
 }
 
 .btn-secondary {
