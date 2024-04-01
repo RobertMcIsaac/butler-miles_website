@@ -20,120 +20,120 @@ staff:
     image: https://fakeimg.pl/300/
     image_label: Image of Margaret Butler-Miles (a Corgi).
 ---
-      <!-- Contact page heading -->
-      {% include "page_heading.njk" %}
-      <!-- Contact - details -->      
-      <section>
-        <div class="container-lg">
-          <div class="row justify-content-center">
-              <div class="col-10 text-center pb-3">
-                <div class="text-center">
-                  <button class="btn btn-metallic text-secondary border-primary rounded-pill shadow btn-press my-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="contact-sidebar">Contact us</button>
-                </div>
-                <ul class="p-0 py-2 mb-1">
-                    <li class="list-group-item text-secondary">Phone: +447700777000</li>
-                    <li class="list-group-item text-secondary">Email: email@butler-miles.com</li>
-                </ul>
-              </div>
+<!-- Contact page heading -->
+{% include "page_heading.njk" %}
+<!-- Contact - details -->      
+<section>
+  <div class="container-lg">
+    <div class="row justify-content-center">
+        <div class="col-10 text-center pb-3">
+          <div class="text-center">
+            <button class="btn btn-metallic text-secondary border-primary rounded-pill shadow btn-press my-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="contact-sidebar">Contact us</button>
           </div>
+          <ul class="p-0 py-2 mb-1">
+              <li class="list-group-item text-secondary">Phone: +447700777000</li>
+              <li class="list-group-item text-secondary">Email: email@butler-miles.com</li>
+          </ul>
         </div>
-      </section>
+    </div>
+  </div>
+</section>
 
-      <!-- The Shop -->
-      <section>
-        <!-- title -->
-        <div class="container-fluid py-4">
-          <div class="row justify-content-center pb-4">
-            <div class="col col-lg-10">
-              <div class="border-bottom border-2 border-primary pb-3 brand-font text-secondary">
-                <h3 class="display-6">The Shop</h3>
-              </div>
-            </div>
-          </div>
-          <!-- details -->
-          <div class="row justify-content-center gap-2">
-              <div class="col col-lg-8">
-                  <div class="card text-secondary h-100 border-none">
-                      <div class="card-body">
-                          <div class="row justify-content-between">
-                              <div class="col-12 col-md-4 py-3">
-                                  <div class="d-flex justify-content-center">
-                                      <img class="img-fluid" src="https://fakeimg.pl/300/" alt="The location of Butler-Miles">
-                                  </div>
-                              </div>
-                              <div class="col-12 col-md-6 py-3 d-flex align-items-center justify-content-center">
-                                  <div class="text-secondary d-flex flex-column">
-                                      <p>* Address *</p>
-                                      <p>Shop opening hours:</p>
-                                      <p>I will be in the shop on Xs, Ys and Zs between Aam and Bpm</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+<!-- The Shop -->
+<section>
+  <!-- title -->
+  <div class="container-fluid py-4">
+    <div class="row justify-content-center pb-4">
+      <div class="col col-lg-10">
+        <div class="border-bottom border-2 border-primary pb-3 brand-font text-secondary">
+          <h3 class="display-6">The Shop</h3>
         </div>
-      </section>
+      </div>
+    </div>
+    <!-- details -->
+    <div class="row justify-content-center gap-2">
+        <div class="col col-lg-8">
+            <div class="card text-secondary h-100 border-none">
+                <div class="card-body">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-4 py-3">
+                            <div class="d-flex justify-content-center">
+                                <img class="img-fluid" src="https://fakeimg.pl/300/" alt="The location of Butler-Miles">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 py-3 d-flex align-items-center justify-content-center">
+                            <div class="text-secondary d-flex flex-column">
+                                <p>* Address *</p>
+                                <p>Shop opening hours:</p>
+                                <p>I will be in the shop on Xs, Ys and Zs between Aam and Bpm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
 
-      <!-- Staff -->
-      <section>
-        <div class="container-fluid py-3">
-          <!-- title -->
-          <div class="row justify-content-center">
-            <div class="col col-lg-10 text-secondary">
-              <div class="border-bottom border-2 border-primary pb-3 brand-font">
-                <h3 class="display-6">Staff</h3>
-              </div>
-            </div>
-          </div>
-          <!-- Staff card - Nick -->
-          <div class="row justify-content-center">
-            <div class="col col-lg-10">
-              <div class="card text-secondary h-100 border-none">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-12 col-md-8">
-                      <div class="card-title brand-font">
-                        <h5>{{ staff.nick.name }}</h5>
-                      </div>
-                      <div class="card-text">
-                        <p>{{ staff.nick.bio }}</p>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                      <div class="d-flex justify-content-center justify-content-lg-end">
-                        <img class="img-fluid" src="{{ staff.nick.image }}" alt="{{ staff.nick.image_label }}">
-                      </div>
-                    </div>
-                  </div>
+<!-- Staff -->
+<section>
+  <div class="container-fluid py-3">
+    <!-- title -->
+    <div class="row justify-content-center">
+      <div class="col col-lg-10 text-secondary">
+        <div class="border-bottom border-2 border-primary pb-3 brand-font">
+          <h3 class="display-6">Staff</h3>
+        </div>
+      </div>
+    </div>
+    <!-- Staff card - Nick -->
+    <div class="row justify-content-center">
+      <div class="col col-lg-10">
+        <div class="card text-secondary h-100 border-none">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-12 col-md-8">
+                <div class="card-title brand-font">
+                  <h5>{{ staff.nick.name }}</h5>
+                </div>
+                <div class="card-text">
+                  <p>{{ staff.nick.bio }}</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- Staff card - Maggie -->
-          <div class="row justify-content-center">
-            <div class="col col-lg-10">
-              <div class="card text-secondary h-100 border-none">
-                <div class="card-body">
-                  <div class="row d-md-flex flex-row-reverse">
-                    <div class="col-12 col-md-8 ">
-                      <div class="card-title brand-font ">
-                        <h5>{{ staff.maggie.name }}</h5>
-                      </div>
-                      <div class="card-text">
-                        <p>{{ staff.maggie.bio }}</p>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                      <div class="d-flex justify-content-center justify-content-lg-start">
-                        <img class="img-fluid" src="{{ staff.maggie.image }}" alt="{{ staff.maggie.image_label }}">
-                      </div>
-                    </div>
-                  </div>
+              <div class="col-12 col-md-4">
+                <div class="d-flex justify-content-center justify-content-lg-end">
+                  <img class="img-fluid" src="{{ staff.nick.image }}" alt="{{ staff.nick.image_label }}">
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+    <!-- Staff card - Maggie -->
+    <div class="row justify-content-center">
+      <div class="col col-lg-10">
+        <div class="card text-secondary h-100 border-none">
+          <div class="card-body">
+            <div class="row d-md-flex flex-row-reverse">
+              <div class="col-12 col-md-8 ">
+                <div class="card-title brand-font ">
+                  <h5>{{ staff.maggie.name }}</h5>
+                </div>
+                <div class="card-text">
+                  <p>{{ staff.maggie.bio }}</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                  <img class="img-fluid" src="{{ staff.maggie.image }}" alt="{{ staff.maggie.image_label }}">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,31 +1,31 @@
-                      <div class="d-flex justify-content-center">
-                        <div id="{{ card.carousel.carousel_id }}" class="carousel cross-fade" data-bs-ride="true">
-                            <div class="carousel-indicators">
-                              {% for image in card.carousel.images %}
-                                <button type="button" data-bs-target="#{{ card.carousel.carousel_id }}" data-bs-slide-to="{{ loop.index0 }}" class="{{ 'active' if loop.first }}" aria-current="{{ 'true' if loop.first }}" aria-label="Slide {{ loop.index }}"></button>
-                              {% endfor %}
-                            </div>
-                            
-                            <div class="carousel-inner">
-                              <!-- Carousel images -->
-                              {% for image in card.carousel.images %}
-                                <div class="carousel-item {% if loop.first %}active{% endif %}">
-                                    <img src="{{ image.src }}" class="d-block w-100" alt="{{ image.label }}">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>{{ image.label }}</h5>
-                                        <p><sm>May not represent current stock.</sm></p>
-                                    </div>
-                                </div>
-                              {% endfor %}
-                            </div>
+<div class="d-flex justify-content-center">
+  <div id="{{ card.carousel.carousel_id }}" class="carousel cross-fade" data-bs-ride="true">
+    <div class="carousel-indicators">
+      {% for image in card.carousel.images %}
+        <button type="button" data-bs-target="#{{ card.carousel.carousel_id }}" data-bs-slide-to="{{ loop.index0 }}" class="{{ 'active' if loop.first }}" aria-current="{{ 'true' if loop.first }}" aria-label="Slide {{ loop.index }}"></button>
+      {% endfor %}
+    </div>
+        
+    <div class="carousel-inner">
+      <!-- Carousel images -->
+      {% for image in card.carousel.images %}
+        <div class="carousel-item {% if loop.first %}active{% endif %}">
+            <img src="{{ image.src }}" class="d-block w-100" alt="{{ image.label }}">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>{{ image.label }}</h5>
+                <p><sm>May not represent current stock.</sm></p>
+            </div>
+        </div>
+      {% endfor %}
+    </div>
 
-                            <button class="carousel-control-prev" type="button" data-bs-target="#{{ card.carousel.carousel_id }}" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#{{ card.carousel.carousel_id }}" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#{{ card.carousel.carousel_id }}" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#{{ card.carousel.carousel_id }}" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>

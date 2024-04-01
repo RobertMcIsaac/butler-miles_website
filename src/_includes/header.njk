@@ -1,62 +1,62 @@
-        <header>
-          <!-- nav bar -->
-          <nav class="navbar fixed-top navbar-expand-lg bg-secondary border-bottom border-primary">
-            <div class="container-fluid my-2">
+<header>
+  <!-- nav bar -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-secondary border-bottom border-primary">
+    <div class="container-fluid my-2">
 
-              <!-- nav brand (on collapse) -->
-              <a class="navbar-brand text-primary brand-font d-lg-none me-auto" href="/">BUTLER-MILES</a>
+      <!-- nav brand (on collapse) -->
+      <a class="navbar-brand text-primary brand-font d-lg-none me-auto" href="/">BUTLER-MILES</a>
 
-               <!-- nav toggler -->
-              <button class="navbar-toggler border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon rounded"></span>
-              </button>
-              
-              <div class="row collapse navbar-collapse mx-auto justify-content-center" id="navbarNav">
-                <!-- nav brand (on expand)-->
-                <div class="col-8 col-lg-3 d-none d-lg-block">
-                  <a class="navbar-brand text-primary brand-font" href="/">BUTLER-MILES</a>
-                </div>
+        <!-- nav toggler -->
+      <button class="navbar-toggler border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon rounded"></span>
+      </button>
+      
+      <div class="row collapse navbar-collapse mx-auto justify-content-center" id="navbarNav">
+        <!-- nav brand (on expand)-->
+        <div class="col-8 col-lg-3 d-none d-lg-block">
+          <a class="navbar-brand text-primary brand-font" href="/">BUTLER-MILES</a>
+        </div>
 
-                <!-- nav btns -->
-                <ul class="col-8 col-lg-6 navbar-nav d-flex justify-content-lg-evenly gap-2 px-1 brand-font">
-                  <!-- Antiques -->
-                  <li class="nav-item">
-                    <a role="button" href="/antiques/" class="btn btn-secondary btn-press text-primary rounded-pill w-100{{ ' active' if pageId == 'antiques' }}"{% if pageId == 'antiques' %} aria-current="page"{% endif %}>ANTIQUES</a>
-                  </li>
-                  <!-- Art -->
-                  <li class="nav-item">
-                    <a role="button" href="/art/" class="btn btn-secondary btn-press text-primary rounded-pill w-100{{ ' active' if pageId == 'art' }}"{% if pageId == 'art' %} aria-current="page"{% endif %}>ART</a>
-                  </li>
-                   <!-- Militaria -->
-                  <li class="nav-item">
-                    <a role="button" href="/militaria/" class="btn btn-secondary btn-press text-primary rounded-pill w-100{{ ' active' if pageId == 'militaria' }}"{% if pageId == 'militaria' %} aria-current="page"{% endif %}>MILITARIA</a>
-                  </li>
-                  <!-- Vintage -->
-                  <li class="nav-item">
-                    <a role="button" href="/vintage/" class="btn btn-secondary btn-press text-primary rounded-pill w-100{{ ' active' if pageId == 'vintage' }}"{% if pageId == 'vintage' %} aria-current="page"{% endif %}>VINTAGE</a>
-                  </li>
-                  <!-- Contact on screens < lg -->
-                  <li class="d-lg-none nav-item">
-                    <a role="button" href="/contact/" class="btn btn-secondary btn-press text-primary rounded-pill w-100{{ ' active' if pageId == 'contact' }}"{% if pageId == 'contact' %} aria-current="page"{% endif %}>CONTACT</a>
-                  </li>
-                  <!-- Home on screens < lg -->
-                  <li class="d-lg-none nav-item">
-                    <a role="button" href="/" class="btn btn-secondary btn-press text-primary rounded-pill w-100{{ ' active' if pageId == 'home' }}"{% if pageId == 'home' %} aria-current="page"{% endif %}>HOME</a>
-                  </li>
-                </ul>
+        <!-- nav btns -->
+        <ul class="col-8 col-lg-6 navbar-nav d-flex justify-content-lg-evenly gap-2 px-1 brand-font">
+          <!-- Antiques -->
+          <li class="nav-item">
+            <a role="button" href="/antiques/" class="btn btn-secondary btn-press text-primary rounded-pill w-100{{ ' active' if pageId == 'antiques' }}"{% if pageId == 'antiques' %} aria-current="page"{% endif %}>ANTIQUES</a>
+          </li>
+          <!-- Art -->
+          <li class="nav-item">
+            <a role="button" href="/art/" class="btn btn-secondary btn-press text-primary rounded-pill w-100{{ ' active' if pageId == 'art' }}"{% if pageId == 'art' %} aria-current="page"{% endif %}>ART</a>
+          </li>
+            <!-- Militaria -->
+          <li class="nav-item">
+            <a role="button" href="/militaria/" class="btn btn-secondary btn-press text-primary rounded-pill w-100{{ ' active' if pageId == 'militaria' }}"{% if pageId == 'militaria' %} aria-current="page"{% endif %}>MILITARIA</a>
+          </li>
+          <!-- Vintage -->
+          <li class="nav-item">
+            <a role="button" href="/vintage/" class="btn btn-secondary btn-press text-primary rounded-pill w-100{{ ' active' if pageId == 'vintage' }}"{% if pageId == 'vintage' %} aria-current="page"{% endif %}>VINTAGE</a>
+          </li>
+          <!-- Contact on screens < lg -->
+          <li class="d-lg-none nav-item">
+            <a role="button" href="/contact/" class="btn btn-secondary btn-press text-primary rounded-pill w-100{{ ' active' if pageId == 'contact' }}"{% if pageId == 'contact' %} aria-current="page"{% endif %}>CONTACT</a>
+          </li>
+          <!-- Home on screens < lg -->
+          <li class="d-lg-none nav-item">
+            <a role="button" href="/" class="btn btn-secondary btn-press text-primary rounded-pill w-100{{ ' active' if pageId == 'home' }}"{% if pageId == 'home' %} aria-current="page"{% endif %}>HOME</a>
+          </li>
+        </ul>
 
-                <!-- nav links on screens > lg -->
-                <ul class="d-none d-lg-flex col-8 col-lg-3  navbar-nav justify-content-center justify-content-lg-end brand-font">
-                  <!-- Contact -->
-                  <li class="nav-item text-center mx-3">
-                    <a class="nav-link text-primary pb-0{{ ' active' if pageId == 'contact' }}"{% if pageId == 'contact' %} aria-current="page"{% endif %} href="/contact/">CONTACT</a>
-                  </li>
-                   <!-- Home -->
-                  <li class="nav-item text-center mx-3">
-                    <a class="nav-link text-primary pb-0{{ ' active' if pageId == 'home' }}"{% if pageId == 'home' %} aria-current="page"{% endif %} href="/">HOME</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </header>
+        <!-- nav links on screens > lg -->
+        <ul class="d-none d-lg-flex col-8 col-lg-3  navbar-nav justify-content-center justify-content-lg-end brand-font">
+          <!-- Contact -->
+          <li class="nav-item text-center mx-3">
+            <a class="nav-link text-primary pb-0{{ ' active' if pageId == 'contact' }}"{% if pageId == 'contact' %} aria-current="page"{% endif %} href="/contact/">CONTACT</a>
+          </li>
+            <!-- Home -->
+          <li class="nav-item text-center mx-3">
+            <a class="nav-link text-primary pb-0{{ ' active' if pageId == 'home' }}"{% if pageId == 'home' %} aria-current="page"{% endif %} href="/">HOME</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
