@@ -9,10 +9,11 @@
 
       <!-- contact form -->
       <form name="contact" action="" netlify>
+        <input type="hidden" name="form-name" value="contact" />
         <!-- name field -->
         <div class="mb-3">
           <label for="name-input" class="form-label">Name:</label>
-          <input name="Name" type="text" class="form-control" id="name-input">
+          <input name="Name" type="text" class="form-control" id="name-input" required>
         </div>
         <!-- phone field -->
         <div class="mb-3">
@@ -22,12 +23,12 @@
         <!-- email field -->
         <div class="mb-3">
           <label for="email-input" class="form-label">Email address:</label>
-          <input name="Email" type="email" class="form-control" id="email-input">
+          <input name="Email" type="email" class="form-control" id="email-input" required>
         </div>
         <!-- subject field -->
         <div class="mb-3">
           <label for="subject-input" class="form-label">Reason for your enquiry:</label>
-          <select name="Subject" class="form-select" id="subject">
+          <select name="Subject" class="form-select" id="subject" required>
             <option value="enquiry" selected>General enquiry</option>
             <option value="selling">Interested in selling</option>
             <option value="specific-item">Looking for a specific item</option>
@@ -36,9 +37,10 @@
         <!-- query text field -->
         <div class="mb-3">
           <label for="enquiry" class="form-label">Your query:</label>
-          <textarea name="Text" id="enquiry" class="form-control" cols="20" rows="5" maxlength="1500" placeholder="Please briefly explain the nature of your enquiry and I will respond ASAP..."></textarea>
+          <textarea name="Text" id="enquiry" class="form-control" cols="20" rows="5" maxlength="1500" placeholder="Please briefly explain the nature of your enquiry and I will respond ASAP..." required></textarea>
         </div>
-        
+        <!-- Hidden honeypot field for spam filtering -->
+        <input type="hidden" name="bot-field" />
         <!-- submit btn -->
         <div class="d-flex justify-content-center">
           <button type="submit" class="btn btn-secondary border-twotone btn-press text-primary rounded-pill py-2">Submit</button>
