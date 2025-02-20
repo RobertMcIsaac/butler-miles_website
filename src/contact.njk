@@ -42,39 +42,71 @@ staff:
 
 <!-- The Shop -->
 <section>
-  <!-- title -->
+  <!-- Title -->
   <div class="container-fluid py-4">
     <div class="row justify-content-center pb-4">
-      <div class="col col-lg-10">
+      <div class="col-lg-10">
         <div class="border-bottom border-2 border-primary pb-3 brand-font text-secondary">
           <h3 class="display-6">The Shop</h3>
         </div>
       </div>
     </div>
-    <!-- details -->
-    <div class="row justify-content-center gap-2">
-        <div class="col col-lg-8">
-            <div class="card text-secondary h-100 border-none">
-                <div class="card-body">
-                    <div class="row justify-content-between">
-                        <div class="col-12 col-md-4 py-3">
-                            <div class="d-flex justify-content-center">
-                                <img class="img-fluid" src="https://fakeimg.pl/300/" alt="The location of Butler-Miles">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 py-3 d-flex align-items-center justify-content-center">
-                            <div class="text-secondary d-flex flex-column">
-                                <p>* Address *</p>
-                                <p>Shop opening hours:</p>
-                                <p>I will be in the shop on Xs, Ys and Zs between Aam and Bpm</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+    <!-- Details -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="card text-secondary h-100 border-none">
+          <div class="card-body"> <!-- Center All Content -->
+            
+            <!-- Shop Description -->
+            <div class="row">
+              <div class="col-12">
+                <p class="text-secondary">
+                  Butler-Miles is proud to be part of a unique cooperative of antique and vintage dealers, each bringing their own specialties and expertise to the shop. This diverse collaboration ensures that our stock is ever-changing, offering a wide variety of historical artifacts, rare collectibles, and unique treasures from across different eras and categories.
+                  <br><br>
+                  Whether you're searching for militaria, fine antiques, vintage memorabilia, or decorative art, the shop provides an eclectic mix of carefully sourced items. With multiple dealers under one roof, you’ll always find something new and unexpected—whether it’s a rare military medal, an early 20th-century advertising sign, or a beautifully preserved pocket watch.
+                </p>
+              </div>
             </div>
-        </div>
-    </div>
-  </div>
+
+            <!-- Address Row (Centered) -->
+            <div class="row mt-4">
+              <div class="col-12 text-center">
+                <h4 class="card-title text-secondary">📍 Address</h4>
+                <p class="card-text text-secondary">
+                  Top Floor<br>
+                  37 Catherine Street,<br>
+                  Salisbury,<br>
+                  SP1 2DH<br>
+                  <a href="https://goo.gl/maps/example" target="_blank" class="text-decoration-none">View on Google Maps</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Opening Hours Row (Centered) -->
+            <div class="row mt-3">
+              <div class="col-12 text-center">
+                <h4 class="card-title text-secondary">⏰ Opening Hours</h4>
+                <ul class="list-group list-group-flush d-inline-block"> <!-- Prevent full width -->
+                  <li class="list-group-item text-secondary border-0">Monday - Saturday:<br>10:00 AM - 5:00 PM</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Nick's Availability Row (Centered) -->
+            <div class="row mt-3">
+              <div class="col-12 text-center">
+                <p class="text-secondary mb-0">
+                  Nick will be in the shop on Tuesday and Thursday afternoons, and all day on Wednesdays.
+                </p>
+              </div>
+            </div>
+
+          </div> <!-- End card-body -->
+        </div> <!-- End card -->
+      </div> <!-- End col -->
+    </div> <!-- End row -->
+  </div> <!-- End container -->
 </section>
 
 <!-- Staff -->
