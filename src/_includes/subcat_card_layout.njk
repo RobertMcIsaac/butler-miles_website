@@ -6,6 +6,14 @@
       </div>
       <div class="card-text">
         <p>{{ card.subcat_description }}</p>
+        <!-- sub-category bullets of notable items -->
+        {% if card.subcat_bullets %}
+        <ul>
+          {% for bullet in card.subcat_bullets %}
+          <li>{{ bullet }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
       </div>
     </div>
     <!-- Sub-category carousel -->
