@@ -10,7 +10,8 @@
     "build": "npm run build:sass && npm run build:eleventy",
     "serve": "eleventy --serve",
     "dev": "concurrently \"npm run watch:sass\" \"npm run serve\"",
-    "start": "npm run build && npm run serve"
+    "start": "npm run build && npm run serve",
+    "test": "jest"
   },
   "keywords": [
     "antiques",
@@ -46,6 +47,12 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^26.0.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
   }
 }

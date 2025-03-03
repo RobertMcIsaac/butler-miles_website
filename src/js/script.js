@@ -1,51 +1,5 @@
-// MAIN
-
-// // calculate navbar height and apply to <main> margin-top 
-// document.addEventListener('DOMContentLoaded', function() {
-//   const navbarHeight = document.querySelector('.navbar').offsetHeight || 0;
-//   document.querySelector('.nav-height-offset').style.marginTop = `${navbarHeight}px`;
-
-//   // Handle click events on anchor links
-//   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//       anchor.addEventListener('click', function(e) {
-//           e.preventDefault();
-
-//           const targetId = this.getAttribute('href');
-//           const targetElement = document.querySelector(targetId);
-
-//           // Adjust scroll position to account for navbar height
-//           window.scroll({
-//               top: targetElement.offsetTop - navbarHeight, // Adjust scroll position
-//               behavior: 'smooth'
-//           });
-//       });
-//   });
-
-
-// });
-
-// function adjustLayout() {
-//     const headerHeight = document.querySelector('header').offsetHeight || 0;
-//     const footerHeight = document.querySelector('footer').offsetHeight || 0;
-//     const viewportHeight = window.innerHeight;
-//     const mainElement = document.querySelector('main');
-    
-//     // Calculate the remaining height for <main>
-//     const remainingHeight = viewportHeight - (headerHeight + footerHeight);
-//     mainElement.style.minHeight = `${remainingHeight}px`;
-// }
-
-// // Adjust layout on initial load
-// document.addEventListener('DOMContentLoaded', adjustLayout);
-
-// // Adjust layout on window resize
-// window.addEventListener('resize', adjustLayout);
-
-
-// REFACTOR
-
 // Initialise layout adjustments
-function initializeLayoutAdjustments() {
+function initialiseLayoutAdjustments() {
     const navbarHeight = document.querySelector('.navbar').offsetHeight || 0;
     
     // Adjust <main> margin-top based on navbar height
@@ -88,4 +42,7 @@ function initializeLayoutAdjustments() {
 }
 
 // Initialise layout adjustments on DOMContentLoaded
-document.addEventListener('DOMContentLoaded', initializeLayoutAdjustments);
+document.addEventListener('DOMContentLoaded', initialiseLayoutAdjustments);
+
+// Export function for testing
+module.exports = { initialiseLayoutAdjustments };
