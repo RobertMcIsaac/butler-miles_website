@@ -1,12 +1,15 @@
 <header>
   <!-- nav bar -->
-  <nav class="navbar fixed-top navbar-expand-lg bg-secondary border-bottom border-1 border-primary">
+  <nav class="navbar fixed-top navbar-expand-lg bg-secondary {{ ' border-bottom border-1 border-primary' if pageId != 'home' }}">
     <div class="container-fluid my-2">
 
       <!-- nav brand (on collapse) -->
-      <a class="navbar-brand text-primary brand-font d-lg-none me-auto" href="/">BUTLER-MILES</a>
-
-        <!-- nav toggler -->
+      <div class="col-8 col-lg-3 d-lg-none">
+        {% if pageId != 'home' %}
+        <a class="navbar-brand text-primary brand-font me-auto" href="/">BUTLER-MILES</a>
+        {% endif %}
+      </div>
+      <!-- nav toggler -->
       <button class="navbar-toggler border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon rounded"></span>
       </button>
@@ -14,7 +17,9 @@
       <div class="row collapse navbar-collapse mx-auto justify-content-center" id="navbarNav">
         <!-- nav brand (on expand)-->
         <div class="col-8 col-lg-3 d-none d-lg-block">
+          {% if pageId != 'home' %}
           <a class="navbar-brand text-primary brand-font" href="/">BUTLER-MILES</a>
+          {% endif %}
         </div>
 
         <!-- nav btns -->
