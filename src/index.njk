@@ -43,7 +43,7 @@ cards:
       <!-- title -->
       <h1 class="display-2 brand-font">BUTLER-MILES</h1>  
       <!-- tagline -->
-      <h6 class="lead ">{{ tagline }}</h6>
+      <h2 class="lead h6">{{ tagline }}</h2>
       <!-- contact btn -->
       <div class="text-center my-3">
         <button class="btn btn-secondary text-primary border-2 border-twotone rounded-pill shadow btn-press py-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="contact-sidebar">Contact Us</button>
@@ -65,7 +65,7 @@ cards:
               <div class="carousel-item {% if loop.first %}active{% endif %}">
                   <img src="{{ image.src }}" class="d-block w-100" alt="{{ image.label }}">
                   <div class="carousel-caption d-none d-md-block">
-                      <h5>{{ image.label }}</h5>
+                      <p class="h5">{{ image.label }}</p>
                       <p><sm>May not represent current stock.</sm></p>
                   </div>
               </div>
