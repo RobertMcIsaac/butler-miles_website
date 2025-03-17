@@ -1,4 +1,6 @@
-const { initialiseLayoutAdjustments } = require('../src/js/script.js');
+// const { initialiseLayoutAdjustments } = require('../src/js/script.js');
+
+import { initialiseLayoutAdjustments } from '../src/js/script.js';
 
 describe('initialiseLayoutAdjustments', () => {
   beforeEach(() => {

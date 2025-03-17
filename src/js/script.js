@@ -1,5 +1,5 @@
 // Initialise layout adjustments
-function initialiseLayoutAdjustments() {
+export function initialiseLayoutAdjustments() {
     const navbarHeight = document.querySelector('.navbar').offsetHeight || 0;
     
     // Adjust <main> margin-top based on navbar height
@@ -45,4 +45,4 @@ function initialiseLayoutAdjustments() {
 document.addEventListener('DOMContentLoaded', initialiseLayoutAdjustments);
 
 // Export function for testing
-module.exports = { initialiseLayoutAdjustments };
+// module.exports = { initialiseLayoutAdjustments };
