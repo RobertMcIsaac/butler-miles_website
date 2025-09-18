@@ -8,14 +8,13 @@ sidebar_vertical_btn: false
 tagline: Preserving the Past – Specialists in Militaria, Antiques, and Collectibles
 
 carousel_images:
-  - src: src/assets/images/live/antiques/clocks&watches/clock1.jpeg
-    label: Blank image 1
-  - src: https://fakeimg.pl/250x100/
-    label: Blank image 2
-  - src: https://fakeimg.pl/250x100/
-    label: Blank image 3
-  - src: https://fakeimg.pl/250x100/
-    label: Blank image 4
+  - src: assets/images/live/antiques/clocks_watches/clock1.jpeg
+    label: Clock image 1
+  - src: assets/images/live/antiques/clocks_watches/watch1.jpeg
+    label: Watch image 1
+  - src: assets/images/live/antiques/clocks_watches/watch2.jpeg
+    label: Watch image 2
+
 
 cards:
   - category: ANTIQUES
@@ -37,7 +36,7 @@ cards:
 
 <!-- <div class="container-fluid pt-5"> -->
 <div class="container-fluid">
-  <div class="row bg-secondary py-5 border-bottom border-1 border-primary">
+  <div class="row bg-secondary py-4 border-bottom border-1 border-primary">
     <!-- Landing - title -->
     <div class="col-12 col-lg-6 bg-secondary text-primary d-flex flex-column justify-content-center align-items-center text-center py-2">
       <!-- title -->
@@ -55,30 +54,37 @@ cards:
       <div id="landingCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             {% for image in carousel_images %}
-              <button type="button" data-bs-target="#{{ card.carousel.carousel_id }}" data-bs-slide-to="{{ loop.index0 }}" class="{{ 'active' if loop.first }}" aria-current="{{ 'true' if loop.first }}" aria-label="Slide {{ loop.index }}"></button>
+              <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="{{ loop.index0 }}" 
+                      class="{{ 'active' if loop.first }}" aria-current="{{ 'true' if loop.first }}" 
+                      aria-label="Slide {{ loop.index }}"></button>
             {% endfor %}
           </div>
 
-          <div class="carousel-inner">
-            <!-- Carousel images -->
+          <div class="carousel-inner ratio ratio-16x9">
             {% for image in carousel_images %}
               <div class="carousel-item {% if loop.first %}active{% endif %}">
-                  <img src="{{ image.src }}" class="d-block w-100" alt="{{ image.label }}">
-                  <div class="carousel-caption d-none d-md-block">
-                      <p class="h5">{{ image.label }}</p>
-                      <p><sm>May not represent current stock.</sm></p>
-                  </div>
+                <img src="{{ image.src }}" 
+                    class="d-block w-100 h-100 object-fit-contain" 
+                    alt="{{ image.label }}">
+                <div class="carousel-caption d-none d-md-block pb-0">
+                  <p class="small mb-0">{{ image.label }}</p>
+                  <p class="text-muted small fst-italic mb-1">
+                    <small>May not represent current stock.</small>
+                  </p>
+                </div>
               </div>
             {% endfor %}   
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#landingCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#landingCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="justify-content-between">
+              <button class="carousel-control-prev" type="button" data-bs-target="#landingCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#landingCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
       </div>
     </div>
